@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import IntroLoader from "../components/IntroLoader";
 
 export const metadata: Metadata = {
   applicationName: "Marco Ronnj Provenzi",
@@ -37,6 +38,7 @@ export default function RootLayout({
               'try{var mode=window.localStorage.getItem("crazy-mode");if(mode==="on"){document.documentElement.classList.add("is-crazy-mode");document.body.classList.add("is-crazy-mode");}else{document.documentElement.classList.remove("is-crazy-mode");document.body.classList.remove("is-crazy-mode");if(mode!=="off"){window.localStorage.setItem("crazy-mode","off");}}}catch(error){}'
           }}
         />
+        <IntroLoader />
         {children}
       </body>
     </html>

@@ -62,7 +62,7 @@ Asset in `public/img`:
 
 About usa anche:
 
-- `public/img/about/ritratto-crazy-transparent.png`
+- `public/img/about/ritratto-crazy-transparent.webp`
 
 ## Regole UX
 

@@ -105,7 +105,7 @@ export default function AboutPage({ params }: { params: { lang: Lang } }) {
             />
             <Image
               className="about-hero__image about-hero__image--crazy"
-              src="/img/about/ritratto-crazy-transparent.png"
+              src="/img/about/ritratto-crazy-transparent.webp"
               alt=""
               fill
               sizes="(max-width: 900px) 100vw, 42vw"
