@@ -284,24 +284,26 @@ export function HeroStage({
         } as React.CSSProperties
       }
     >
-      <svg className="hero-field" aria-hidden="true" viewBox="0 0 100 100" preserveAspectRatio="none">
-        {fieldLines.map((fieldLine) => (
-          <g key={fieldLine.key}>
-            <path
-              className="hero-field__line hero-field__line--straight"
-              d={fieldLine.d}
-              pathLength={100}
-              style={{ "--line-opacity": fieldLine.opacity } as React.CSSProperties}
-            />
-            <path
-              className="hero-field__line hero-field__line--hand"
-              d={fieldLine.handD}
-              pathLength={100}
-              style={{ "--line-opacity": fieldLine.opacity } as React.CSSProperties}
-            />
-          </g>
-        ))}
-      </svg>
+      <div className="hero-field-wrap" aria-hidden="true">
+        <svg className="hero-field" aria-hidden="true" viewBox="0 0 100 100" preserveAspectRatio="none">
+          {fieldLines.map((fieldLine) => (
+            <g key={fieldLine.key}>
+              <path
+                className="hero-field__line hero-field__line--straight"
+                d={fieldLine.d}
+                pathLength={100}
+                style={{ "--line-opacity": fieldLine.opacity } as React.CSSProperties}
+              />
+              <path
+                className="hero-field__line hero-field__line--hand"
+                d={fieldLine.handD}
+                pathLength={100}
+                style={{ "--line-opacity": fieldLine.opacity } as React.CSSProperties}
+              />
+            </g>
+          ))}
+        </svg>
+      </div>
       <div className="hero__meta">
         <p>(Independent)</p>
         <p>{kicker}</p>
