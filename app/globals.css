@@ -43,8 +43,11 @@
 html {
   background: var(--bg);
   color: var(--ink);
-  cursor: none;
   scroll-behavior: auto;
+}
+
+html.has-custom-cursor {
+  cursor: none;
 }
 
 body {
@@ -62,7 +65,11 @@ body.is-crazy-mode {
   --title-font: "protest-revolution", "Protest Revolution", var(--sans);
 }
 
-body::after {
+body.has-custom-cursor {
+  cursor: none;
+}
+
+body.has-custom-cursor::after {
   background: #ffffff;
   border-radius: 999px;
   clip-path: none;
@@ -84,15 +91,15 @@ body::after {
   z-index: 100;
 }
 
-body.is-link-hover::after {
+body.has-custom-cursor.is-link-hover::after {
   animation: cursor-spin 3.8s linear infinite;
   border-radius: 1px;
   height: 26px;
   width: 26px;
 }
 
-body.is-cursor-next::after,
-body.is-cursor-prev::after {
+body.has-custom-cursor.is-cursor-next::after,
+body.has-custom-cursor.is-cursor-prev::after {
   animation: none;
   border-radius: 0;
   clip-path: polygon(12% 0, 12% 100%, 98% 50%);
@@ -100,17 +107,16 @@ body.is-cursor-prev::after {
   width: 31px;
 }
 
-body.is-cursor-prev::after {
+body.has-custom-cursor.is-cursor-prev::after {
   clip-path: polygon(88% 0, 88% 100%, 2% 50%);
 }
 
-body.is-holding-hero::after {
+body.has-custom-cursor.is-holding-hero::after {
   opacity: 0;
 }
 
 a {
   color: inherit;
-  cursor: none;
   text-decoration: none;
 }
 
@@ -118,8 +124,30 @@ button {
   background: transparent;
   border: 0;
   color: inherit;
-  cursor: none;
   font: inherit;
+}
+
+body.has-custom-cursor a,
+body.has-custom-cursor button {
+  cursor: none;
+}
+
+@media (pointer: coarse) {
+  html,
+  body,
+  a,
+  button {
+    cursor: auto;
+  }
+
+  body::after,
+  .custom-cursor,
+  .cursor-dot,
+  .cursor-ring {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
 }
 
 main {

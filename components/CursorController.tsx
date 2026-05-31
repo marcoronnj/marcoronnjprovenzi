@@ -3,9 +3,31 @@
 import { useEffect } from "react";
 
 const interactiveSelector = "a, button, [data-cursor]";
+const cursorClasses = ["has-custom-cursor", "is-link-hover", "is-cursor-next", "is-cursor-prev"];
+
+function isTouchDevice() {
+  if (typeof window === "undefined") return true;
+
+  return (
+    window.matchMedia("(pointer: coarse)").matches ||
+    "ontouchstart" in window ||
+    navigator.maxTouchPoints > 0
+  );
+}
 
 export function CursorController() {
   useEffect(() => {
+    if (isTouchDevice()) {
+      document.documentElement.classList.remove("has-custom-cursor");
+      document.body.classList.remove(...cursorClasses);
+      document.body.style.removeProperty("--cursor-x");
+      document.body.style.removeProperty("--cursor-y");
+      return;
+    }
+
+    document.documentElement.classList.add("has-custom-cursor");
+    document.body.classList.add("has-custom-cursor");
+
     const resetCursorState = () => {
       document.body.classList.remove("is-link-hover", "is-cursor-next", "is-cursor-prev");
     };
@@ -30,6 +52,8 @@ export function CursorController() {
     };
 
     const move = (event: PointerEvent) => {
+      if (event.pointerType !== "mouse") return;
+
       document.body.style.setProperty("--cursor-x", `${event.clientX}px`);
       document.body.style.setProperty("--cursor-y", `${event.clientY}px`);
       updateCursorTarget(event.clientX, event.clientY);
@@ -63,6 +87,10 @@ export function CursorController() {
       window.removeEventListener("pointermove", move);
       document.removeEventListener("pointerover", over);
       document.removeEventListener("pointerout", out);
+      document.documentElement.classList.remove("has-custom-cursor");
+      document.body.classList.remove("has-custom-cursor");
+      document.body.style.removeProperty("--cursor-x");
+      document.body.style.removeProperty("--cursor-y");
       resetCursorState();
     };
   }, []);

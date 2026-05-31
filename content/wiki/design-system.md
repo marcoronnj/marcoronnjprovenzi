@@ -60,6 +60,7 @@ Usi:
 
 - Cursor custom tondo.
 - Su link il cursor diventa quadrato con radius 1px e ruota lentamente.
+- Il cursor custom esiste solo su desktop con mouse reale; su mobile, tablet e dispositivi touch non deve essere montato/attivato.
 - Per carousel futuri:
   - next: triangolo equilatero che punta a destra;
   - prev: triangolo equilatero che punta a sinistra.
