@@ -309,13 +309,15 @@ export function HeroStage({
         <p>{kicker}</p>
         <p>(Bergamo / Worldwide)</p>
       </div>
-      <h1 className="hero-title" aria-label="Web designer freelance and creative web developer">
-        {heroLines.map((heroLine) => (
-          <span className="hero-title__line" key={heroLine}>
-            {renderLine(heroLine)}
-          </span>
-        ))}
-      </h1>
+      <div className="hero-title-frame">
+        <h1 className="hero-title" aria-label="Web designer freelance and creative web developer">
+          {heroLines.map((heroLine) => (
+            <span className="hero-title__line" key={heroLine}>
+              {renderLine(heroLine)}
+            </span>
+          ))}
+        </h1>
+      </div>
       <div className="hero-reveal" aria-hidden={!complete}>
         <div className="hero-reveal__background" aria-hidden="true">
           {revealLayout.unused.map(({ char, index, column, row, offsetX, offsetY, rotation, delay }) => (

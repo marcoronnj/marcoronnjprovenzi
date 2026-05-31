@@ -616,6 +616,7 @@ body.is-crazy-mode .hero.is-pressed .hero-field__line--hand {
 
 .hero__meta,
 .hero__bottom,
+.hero-title-frame,
 .hero-title,
 .hero-reveal,
 .hold-meter {
@@ -641,31 +642,51 @@ body.is-crazy-mode .hero.is-pressed .hero-field__line--hand {
   text-align: right;
 }
 
-.hero-title {
+.hero-title-frame {
   align-self: center;
+  justify-self: center;
+  margin: 6vh 0 4vh;
+  width: min(90vw, 1600px);
+}
+
+.hero-title {
   display: grid;
   font-family: var(--title-font);
   font-size: var(--hero-title-size);
   font-weight: 500;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
   line-height: 0.8;
-  margin: 6vh 0 4vh;
+  margin: 0;
   text-transform: uppercase;
+  width: 100%;
 }
 
 .hero-title__line {
   display: block;
+  grid-column: 1 / -1;
   transition: transform 520ms cubic-bezier(0.2, 1, 0.2, 1);
+  white-space: nowrap;
+}
+
+.hero-title__line:nth-child(1) {
+  grid-column: 2 / 11;
+  justify-self: start;
 }
 
 .hero-title__line:nth-child(2) {
+  grid-column: 4 / 12;
+  justify-self: end;
   text-align: right;
 }
 
 .hero-title__line:nth-child(3) {
-  padding-left: 12vw;
+  grid-column: 3 / 12;
+  justify-self: start;
 }
 
 .hero-title__line:nth-child(4) {
+  grid-column: 5 / 12;
+  justify-self: end;
   text-align: right;
 }
 
@@ -2793,16 +2814,29 @@ body.is-crazy-mode .site-footer {
     font-size: var(--hero-title-size);
   }
 
-  .hero-title__line,
-  .hero-title__line:nth-child(2),
-  .hero-title__line:nth-child(3),
-  .hero-title__line:nth-child(4) {
-    padding-left: 0;
-    text-align: center;
+  .hero-title-frame {
+    width: 100%;
   }
 
   .hero-title {
-    justify-items: center;
+    display: block;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .hero-title__line,
+  .hero-title__line:nth-child(1),
+  .hero-title__line:nth-child(2),
+  .hero-title__line:nth-child(3),
+  .hero-title__line:nth-child(4) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    padding-left: 0;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .hero-title {
     text-align: center;
   }
 
@@ -2983,7 +3017,7 @@ body.is-crazy-mode .site-footer {
     --nav-size: 13px;
     --pill-size: 11px;
     --hero-meta-size: 10px;
-    --hero-title-size: clamp(31px, 13vw, 54px);
+    --hero-title-size: clamp(29px, 9vw, 36px);
     --hero-body-size: 11px;
     --manifesto-indent: 0px;
     --manifesto-size: clamp(25px, 8.2vw, 38px);
