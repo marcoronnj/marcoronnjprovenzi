@@ -132,9 +132,27 @@ La home mostra solo una selezione editoriale di progetti in risalto, non tutto l
 
 Ordine attuale:
 
+- Indoor Outdoor Cosmetics
 - von Meiss architekten
 - Studio B-Quadro
 - R.A.T. Collective
+- Helvetic Leaf
+- Impresa Edile Regonesi
+- Vedrai
+
+### Indoor Outdoor Cosmetics
+
+- Slug: `indoor-outdoor-cosmetics`
+- Anno: 2026
+- Cliente: Indoor Outdoor Cosmetics
+- Design: Sam Sala Studio
+- Lavoro svolto: Sviluppo
+- Tecnologia: Shopify + Custom Liquid
+- Website: https://iamio.com/
+
+Descrizione IT:
+
+Ho sviluppato in Shopify e Custom Liquid il sito di Indoor Outdoor Cosmetics, progetto e-commerce milanese nato attorno a IAMIO / Indoor Outdoor Lab. Il brand lavora su una skincare funzionale pensata per persone in movimento: routine indoor, esposizione outdoor, UV, vento, freddo, sudore, attrito e recupero. Il sito progettato da Sam Sala Studio tiene insieme identita' minimale, racconto editoriale e vendita diretta dentro una struttura Shopify pronta a gestire prodotti, articoli e crescita del brand.
 
 ### von Meiss architekten
 

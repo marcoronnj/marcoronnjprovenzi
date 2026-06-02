@@ -31,6 +31,106 @@ export type ClientListItem = {
 
 export const projects: Project[] = [
   {
+    slug: "indoor-outdoor-cosmetics",
+    year: "2026",
+    client: "Indoor Outdoor Cosmetics",
+    services: ["Sviluppo", "Shopify", "Custom Liquid"],
+    accent: "#050505",
+    title: {
+      it: "Indoor Outdoor Cosmetics",
+      en: "Indoor Outdoor Cosmetics"
+    },
+    excerpt: {
+      it: "Sviluppo Shopify e Custom Liquid per IAMIO, skincare funzionale per indoor care e outdoor performance.",
+      en: "Shopify and Custom Liquid development for IAMIO, functional skincare for indoor care and outdoor performance."
+    },
+    narrative: {
+      it: "Ho sviluppato in Shopify e Custom Liquid il sito di Indoor Outdoor Cosmetics, progetto e-commerce milanese nato attorno a IAMIO / Indoor Outdoor Lab. Il brand lavora su una skincare funzionale pensata per persone in movimento: routine indoor, esposizione outdoor, UV, vento, freddo, sudore, attrito e recupero. Il sito progettato da Sam Sala Studio doveva tenere insieme identita' minimale, racconto editoriale e vendita diretta: schede prodotto essenziali, sezioni lab, contenuti su performance e longevita' della pelle, e una struttura Shopify pronta a gestire prodotti, articoli e crescita del brand senza perdere precisione.",
+      en: "I developed the Indoor Outdoor Cosmetics website in Shopify and Custom Liquid for the Milan-based e-commerce project behind IAMIO / Indoor Outdoor Lab. The brand focuses on functional skincare for people in motion: indoor routines, outdoor exposure, UV, wind, cold, sweat, friction and recovery. The website, designed by Sam Sala Studio, needed to bring together a minimal identity, editorial storytelling and direct commerce: essential product pages, lab sections, content around performance and skin longevity, and a Shopify structure ready to manage products, articles and brand growth without losing precision."
+    },
+    details: [
+      {
+        label: {
+          it: "Design",
+          en: "Design"
+        },
+        value: {
+          it: "Sam Sala Studio",
+          en: "Sam Sala Studio"
+        },
+        href: "https://samsala.studio/"
+      },
+      {
+        label: {
+          it: "Lavoro svolto",
+          en: "Work"
+        },
+        value: {
+          it: "Sviluppo",
+          en: "Development"
+        }
+      },
+      {
+        label: {
+          it: "Tecnologia",
+          en: "Technology"
+        },
+        value: {
+          it: "Shopify + Custom Liquid",
+          en: "Shopify + Custom Liquid"
+        }
+      },
+      {
+        label: {
+          it: "Website",
+          en: "Website"
+        },
+        value: {
+          it: "iamio.com",
+          en: "iamio.com"
+        },
+        href: "https://iamio.com/"
+      }
+    ],
+    media: [
+      {
+        src: "/img/works/indoor-outdoor/iamio-1.webp",
+        alt: {
+          it: "Homepage del sito Indoor Outdoor Cosmetics",
+          en: "Indoor Outdoor Cosmetics website homepage"
+        }
+      },
+      {
+        src: "/img/works/indoor-outdoor/iamio-2.webp",
+        alt: {
+          it: "Pagina prodotto del sito Indoor Outdoor Cosmetics",
+          en: "Indoor Outdoor Cosmetics website product page"
+        }
+      },
+      {
+        src: "/img/works/indoor-outdoor/iamio-3.webp",
+        alt: {
+          it: "Sezione lab del sito Indoor Outdoor Cosmetics",
+          en: "Indoor Outdoor Cosmetics website lab section"
+        }
+      },
+      {
+        src: "/img/works/indoor-outdoor/iamio-4.webp",
+        alt: {
+          it: "Archivio prodotti del sito Indoor Outdoor Cosmetics",
+          en: "Indoor Outdoor Cosmetics website product archive"
+        }
+      },
+      {
+        src: "/img/works/indoor-outdoor/iamio-5.webp",
+        alt: {
+          it: "Sezione editoriale del sito Indoor Outdoor Cosmetics",
+          en: "Indoor Outdoor Cosmetics website editorial section"
+        }
+      }
+    ]
+  },
+  {
     slug: "von-meiss-architekten",
     year: "2025",
     client: "von Meiss architekten",
@@ -1755,7 +1855,8 @@ export const clients: ClientListItem[] = [
     slug: "impresa-edile-regonesi"
   },
   {
-    name: "Indoor Outdoor Cosmetics"
+    name: "Indoor Outdoor Cosmetics",
+    slug: "indoor-outdoor-cosmetics"
   },
   {
     name: "Ing. Mauro Magli Management"

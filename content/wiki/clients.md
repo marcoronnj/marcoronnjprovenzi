@@ -16,6 +16,7 @@ I clienti con pagina progetto interna devono essere linkati, in bold e con under
 - Giorgia Mantero Osteopata -> `giorgia-mantero-osteopata`
 - Helvetic Leaf -> `helvetic-leaf`
 - Impresa Edile Regonesi -> `impresa-edile-regonesi`
+- Indoor Outdoor Cosmetics -> `indoor-outdoor-cosmetics`
 - LAB Distribution -> `lab-distribution`
 - Michela Meni Studio -> `michela-meni-studio`
 - Monica Mancini Restauro Dipinti -> `monica-mancini-restauro-dipinti`

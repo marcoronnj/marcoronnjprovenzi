@@ -7,7 +7,15 @@ import { ProjectIndex } from "@/components/ProjectIndex";
 import { projects } from "@/data/projects";
 import { dictionary, isLang, type Lang } from "@/lib/i18n";
 
-const featuredProjectSlugs = ["von-meiss-architekten", "studio-b-quadro", "rat-collective"];
+const featuredProjectSlugs = [
+  "indoor-outdoor-cosmetics",
+  "von-meiss-architekten",
+  "studio-b-quadro",
+  "rat-collective",
+  "helvetic-leaf",
+  "impresa-edile-regonesi",
+  "vedrai"
+];
 
 export default function Home({ params }: { params: { lang: Lang } }) {
   if (!isLang(params.lang)) notFound();
