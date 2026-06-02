@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { CrazyWordCensor } from "@/components/CrazyWordCensor";
 import { CursorController } from "@/components/CursorController";
 import { Footer } from "@/components/Footer";
 import { SmoothScroll } from "@/components/SmoothScroll";
@@ -47,6 +48,7 @@ export default function LangLayout({
   return (
     <>
       <CursorController />
+      <CrazyWordCensor />
       <SmoothScroll />
       {children}
       <Footer lang={params.lang} />

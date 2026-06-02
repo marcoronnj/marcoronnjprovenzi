@@ -65,6 +65,60 @@ body.is-crazy-mode {
   --title-font: "protest-revolution", "Protest Revolution", var(--sans);
 }
 
+body:not(.is-crazy-mode) .crazy-word {
+  display: contents;
+}
+
+body.is-crazy-mode .crazy-word {
+  display: inline-block;
+  isolation: isolate;
+  position: relative;
+  vertical-align: baseline;
+}
+
+body.is-crazy-mode .crazy-word::after {
+  background: var(--ink);
+  border-radius: 46% 39% 54% 33% / 36% 58% 31% 52%;
+  clip-path: polygon(0 32%, 6% 16%, 22% 6%, 43% 11%, 61% 3%, 84% 14%, 100% 28%, 96% 78%, 79% 92%, 55% 86%, 31% 96%, 9% 84%, 2% 66%);
+  content: "";
+  inset: -0.08em -0.14em -0.1em;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  transform: translateY(var(--crazy-word-shift-y, 0)) rotate(var(--crazy-word-tilt, 0deg)) scale(var(--crazy-word-scale-x, 1.06), var(--crazy-word-scale-y, 0.94));
+  transform-origin: center;
+  z-index: 2;
+}
+
+body.is-crazy-mode .crazy-word.is-censored::after {
+  opacity: 1;
+}
+
+body.is-crazy-mode .crazy-word--1::after {
+  border-radius: 38% 57% 34% 49% / 48% 33% 61% 39%;
+  clip-path: polygon(1% 25%, 14% 8%, 34% 13%, 53% 5%, 73% 11%, 95% 24%, 99% 67%, 88% 91%, 63% 84%, 44% 97%, 18% 86%, 4% 71%);
+}
+
+body.is-crazy-mode .crazy-word--2::after {
+  border-radius: 56% 31% 48% 42% / 31% 54% 42% 63%;
+  clip-path: polygon(2% 38%, 9% 17%, 28% 10%, 47% 16%, 66% 7%, 91% 19%, 100% 41%, 94% 82%, 72% 90%, 48% 83%, 26% 95%, 5% 76%);
+}
+
+body.is-crazy-mode .crazy-word--3::after {
+  border-radius: 31% 50% 39% 58% / 52% 37% 57% 34%;
+  clip-path: polygon(0 29%, 11% 12%, 25% 17%, 45% 4%, 64% 13%, 86% 8%, 98% 31%, 100% 75%, 82% 88%, 60% 94%, 38% 84%, 15% 91%, 3% 62%);
+}
+
+body.is-crazy-mode .crazy-word--4::after {
+  border-radius: 49% 36% 59% 31% / 35% 63% 33% 55%;
+  clip-path: polygon(3% 21%, 20% 9%, 36% 14%, 59% 5%, 78% 16%, 97% 22%, 94% 72%, 100% 86%, 71% 92%, 52% 86%, 30% 97%, 8% 79%, 0 51%);
+}
+
+body.is-crazy-mode .crazy-word--5::after {
+  border-radius: 42% 53% 32% 48% / 61% 31% 49% 38%;
+  clip-path: polygon(1% 35%, 7% 19%, 24% 7%, 41% 15%, 58% 6%, 80% 12%, 99% 34%, 95% 69%, 84% 93%, 57% 87%, 36% 92%, 13% 83%, 0 61%);
+}
+
 body.has-custom-cursor {
   cursor: none;
 }
