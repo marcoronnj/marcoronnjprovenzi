@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 
 const WORD_PATTERN = /[A-Za-zÀ-ÖØ-öø-ÿ0-9]+(?:[’'\-][A-Za-zÀ-ÖØ-öø-ÿ0-9]+)*/g;
+const CENSOR_DELAY = 1000;
 const ROOT_SELECTOR = "main, .site-footer";
 const SKIP_SELECTOR = [
   "a",
@@ -25,6 +26,48 @@ const SKIP_SELECTOR = [
   ".site-footer__marquee",
   ".crazy-word"
 ].join(",");
+
+const censorTimers = new Map<HTMLElement, number>();
+
+function clearCensorTimer(word: HTMLElement) {
+  const timer = censorTimers.get(word);
+
+  if (timer === undefined) return;
+
+  window.clearTimeout(timer);
+  censorTimers.delete(word);
+}
+
+function clearAllCensorTimers() {
+  censorTimers.forEach((timer) => {
+    window.clearTimeout(timer);
+  });
+  censorTimers.clear();
+}
+
+function startCensorTimer(event: MouseEvent) {
+  if (!isCrazyModeEnabled() || !(event.currentTarget instanceof HTMLElement)) return;
+
+  const word = event.currentTarget;
+
+  if (word.classList.contains("is-censored") || censorTimers.has(word)) return;
+
+  const timer = window.setTimeout(() => {
+    censorTimers.delete(word);
+
+    if (!word.isConnected || !isCrazyModeEnabled()) return;
+
+    word.classList.add("is-censored");
+  }, CENSOR_DELAY);
+
+  censorTimers.set(word, timer);
+}
+
+function cancelCensorTimer(event: MouseEvent) {
+  if (event.currentTarget instanceof HTMLElement) {
+    clearCensorTimer(event.currentTarget);
+  }
+}
 
 function hashText(value: string) {
   let hash = 0;
@@ -50,6 +93,8 @@ function createWordSpan(word: string, seed: number) {
   span.style.setProperty("--crazy-word-shift-y", `${shiftY}em`);
   span.style.setProperty("--crazy-word-scale-x", String(scaleX));
   span.style.setProperty("--crazy-word-scale-y", String(scaleY));
+  span.addEventListener("mouseenter", startCensorTimer);
+  span.addEventListener("mouseleave", cancelCensorTimer);
 
   return span;
 }
@@ -114,6 +159,7 @@ function wrapWords(root: ParentNode) {
 function unwrapWords() {
   const roots = document.querySelectorAll(ROOT_SELECTOR);
 
+  clearAllCensorTimers();
   document.querySelectorAll<HTMLSpanElement>(".crazy-word").forEach((word) => {
     word.replaceWith(document.createTextNode(word.textContent ?? ""));
   });
@@ -165,26 +211,14 @@ export function CrazyWordCensor() {
 
     const contentObserver = new MutationObserver(scheduleWrap);
 
-    const handlePointerOver = (event: PointerEvent) => {
-      if (!isCrazyModeEnabled() || event.pointerType !== "mouse") return;
-
-      const target = event.target instanceof Element
-        ? event.target.closest<HTMLElement>(".crazy-word")
-        : null;
-
-      target?.classList.add("is-censored");
-    };
-
     bodyObserver.observe(document.body, { attributeFilter: ["class"], attributes: true });
     contentObserver.observe(document.body, { childList: true, subtree: true });
-    document.addEventListener("pointerover", handlePointerOver);
     wrapAll();
 
     return () => {
       cancelAnimationFrame(mutationFrame);
       bodyObserver.disconnect();
       contentObserver.disconnect();
-      document.removeEventListener("pointerover", handlePointerOver);
       resetAll();
     };
   }, []);
