@@ -1179,9 +1179,9 @@ body.is-crazy-mode .project-row {
 
 body.is-crazy-mode .project-row::after {
   background-repeat: repeat-x;
-  background-size: 180px 12px;
+  background-size: 180px 18px;
   content: "";
-  height: 12px;
+  height: 18px;
   left: 0;
   pointer-events: none;
   position: absolute;
@@ -3140,6 +3140,45 @@ body.is-crazy-mode .site-footer {
   .intro.manifesto {
     align-items: center;
   }
+
+  /* Crazy mode mobile: dog illustrations full-bleed (100vw) */
+  body.is-crazy-mode .intro.manifesto::after {
+    background-position: center 50%;
+    background-size: 100vw auto;
+  }
+
+  body.is-crazy-mode .services__crazy-image {
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+  }
+
+  body.is-crazy-mode .services-quality__crazy-image {
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+  }
+
+  body.is-crazy-mode .contact-hero__crazy-image {
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+  }
+
+  /* Crazy mode mobile: service box borders - solo bordo superiore, no sinistro/destro */
+  body.is-crazy-mode .services-platforms__list article::before,
+  body.is-crazy-mode .services-platforms__list article:first-child::before {
+    background-image: var(--hand-line);
+    background-position: left top;
+    background-repeat: repeat-x;
+    background-size: 120px 10px;
+    height: 10px;
+    inset: -5px 0 auto 0;
+    width: auto;
+  }
 }
 
 @media (max-width: 560px) {
@@ -3336,8 +3375,9 @@ body.is-crazy-mode .site-footer {
 
   body.is-crazy-mode .services-quality__crazy-image {
     bottom: 66px;
-    height: 54vh;
-    left: 62%;
+    height: auto;
+    left: 50%;
+    width: 100vw;
   }
 
   .services-section-head,
