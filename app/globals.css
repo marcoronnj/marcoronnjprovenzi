@@ -1178,7 +1178,6 @@ body.is-crazy-mode .project-row {
 }
 
 body.is-crazy-mode .project-row::after {
-  background-image: url("data:image/svg+xml,%3Csvg width='180' height='12' viewBox='0 0 180 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 7C11 3.5 16 9.5 28 5.8C38 2.4 43 9 54 5C64 1.5 72 8.5 84 5.8C93 3.4 99 9.2 111 5.5C120 2.5 126 8.8 137 5C146 1.8 153 9 164 5.8C172 3.2 177 7.5 180 5.5' fill='none' stroke='%23050505' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E");
   background-repeat: repeat-x;
   background-size: 180px 12px;
   content: "";
@@ -1188,33 +1187,27 @@ body.is-crazy-mode .project-row::after {
   position: absolute;
   right: 0;
   top: -6px;
-  transform-origin: left center;
   z-index: 2;
 }
 
 body.is-crazy-mode .project-row:nth-child(5n+1)::after {
-  background-position-x: 0px;
-  transform: rotate(0.35deg) translateY(0.8px);
+  background-image: url("data:image/svg+xml,%3Csvg width='180' height='12' viewBox='0 0 180 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6.5C13 3 18 9 30 5.5C41 2 47 9 59 5.5C69 2.5 75 8.5 87 5C97 2 104 8.5 115 5.5C125 3 131 9 142 5.5C152 2.5 158 8.5 170 5C176 2.5 179 6 180 6' fill='none' stroke='%23050505' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E");
 }
 
 body.is-crazy-mode .project-row:nth-child(5n+2)::after {
-  background-position-x: 45px;
-  transform: rotate(-0.55deg) translateY(-0.8px);
+  background-image: url("data:image/svg+xml,%3Csvg width='180' height='12' viewBox='0 0 180 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 5C10 9.5 17 2.5 28 6C38 9.5 44 2 55 5.5C65 9 72 2.5 83 6C93 9.5 99 2 110 5.5C120 8.5 127 2.5 138 6C148 9 154 3 165 6.5C173 9 177 5 180 5' fill='none' stroke='%23050505' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E");
 }
 
 body.is-crazy-mode .project-row:nth-child(5n+3)::after {
-  background-position-x: 90px;
-  transform: rotate(0.2deg) translateY(1.5px);
+  background-image: url("data:image/svg+xml,%3Csvg width='180' height='12' viewBox='0 0 180 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6C8 2.5 13 8 22 5C30 2.5 35 9.5 46 5.5C56 2 64 9 74 6C82 3 87 9.5 98 5.5C107 2 115 8.5 125 5C135 2.5 141 9.5 153 6C162 3 168 9 175 5.5C178 4 180 6 180 6' fill='none' stroke='%23050505' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E");
 }
 
 body.is-crazy-mode .project-row:nth-child(5n+4)::after {
-  background-position-x: 30px;
-  transform: rotate(-0.4deg) translateY(0.5px);
+  background-image: url("data:image/svg+xml,%3Csvg width='180' height='12' viewBox='0 0 180 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 7C7 4 12 9.5 20 6.5C27 3.5 32 9 40 6C48 3 53 9 61 6.5C69 3.5 74 9 82 6C90 3 95 9.5 103 6C111 2.5 116 9 124 5.5C132 2.5 137 8.5 145 5.5C153 2.5 158 9 166 5.5C172 3 176 7 180 5.5' fill='none' stroke='%23050505' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E");
 }
 
 body.is-crazy-mode .project-row:nth-child(5n)::after {
-  background-position-x: 135px;
-  transform: rotate(0.5deg) translateY(-1px);
+  background-image: url("data:image/svg+xml,%3Csvg width='180' height='12' viewBox='0 0 180 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 5.5C11 2.5 16 8 26 5C35 2.5 39 9 49 5.5C59 2 67 9 79 5.5C88 2 93 8.5 103 5C112 2 118 9 130 5.5C139 2.5 144 8.5 154 5C162 2 167 8 175 5.5C178 4 180 6.5 180 6.5' fill='none' stroke='%23050505' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E");
 }
 
 .project-row::before {
@@ -1232,24 +1225,11 @@ body.is-crazy-mode .project-row:nth-child(5n)::after {
 }
 
 body.is-crazy-mode .project-row::before {
-  clip-path: polygon(
-    0% 4%, 15% 1%, 30% 3%, 45% 0%, 60% 2%, 75% 1%, 90% 3%, 100% 1%,
-    100% 97%, 85% 100%, 70% 98%, 55% 100%, 40% 97%, 25% 99%, 10% 97%, 0% 100%
-  );
+  display: none;
 }
 
-body.is-crazy-mode .project-row:nth-child(2n)::before {
-  clip-path: polygon(
-    0% 2%, 12% 0%, 28% 3%, 44% 1%, 60% 3%, 76% 0%, 90% 2%, 100% 0%,
-    100% 98%, 88% 100%, 72% 97%, 56% 100%, 42% 98%, 26% 100%, 10% 97%, 0% 99%
-  );
-}
-
-body.is-crazy-mode .project-row:nth-child(3n)::before {
-  clip-path: polygon(
-    0% 3%, 18% 0%, 34% 2%, 50% 0%, 64% 3%, 80% 1%, 94% 3%, 100% 0%,
-    100% 96%, 84% 99%, 68% 97%, 52% 100%, 36% 97%, 20% 100%, 6% 98%, 0% 97%
-  );
+body.is-crazy-mode .project-row:hover {
+  color: inherit;
 }
 
 .project-row:hover {
