@@ -948,7 +948,7 @@ body.is-crazy-mode .hero.is-pressed .hero-field__line--hand {
 .services > span:not(.services__visual),
 .project-copy span,
 .selected-hero span {
-  color: var(--muted);
+  color: currentColor;
 }
 
 .intro {
@@ -2650,6 +2650,7 @@ body.is-crazy-mode .site-footer {
 
 .site-footer__marquee {
   align-self: end;
+  contain: layout paint;
   display: block;
   grid-row: 3;
   height: 40dvh;
@@ -2668,7 +2669,9 @@ body.is-crazy-mode .site-footer {
   display: flex;
   flex: none;
   left: 0;
+  min-width: max-content;
   position: absolute;
+  transform: translate3d(0, 0, 0);
   will-change: transform;
 }
 
@@ -2783,6 +2786,7 @@ body.is-crazy-mode .site-footer {
   .site-footer__marquee {
     margin-left: -20px;
     margin-right: -20px;
+    overflow: hidden;
     width: calc(100% + 40px);
   }
 }
@@ -3029,6 +3033,23 @@ body.is-crazy-mode .site-footer {
     padding-top: 18px;
   }
 
+  .site-footer__marquee {
+    height: clamp(210px, 32svh, 300px);
+    min-height: clamp(210px, 32svh, 300px);
+    overflow: hidden;
+    transform: translateZ(0);
+  }
+
+  .site-footer__marquee-track {
+    bottom: -0.12em;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .site-footer__marquee-group {
+    font-size: clamp(180px, 31svh, 290px);
+    min-width: max-content;
+  }
+
   .site-footer__top {
     grid-template-columns: 1fr 1fr;
     row-gap: 34px;
@@ -3073,6 +3094,25 @@ body.is-crazy-mode .site-footer {
   .work-template {
     padding-left: 16px;
     padding-right: 16px;
+  }
+
+  .contact-page,
+  .contact-hero,
+  .site-footer {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .contact-hero__body,
+  .contact-hero__links,
+  .contact-hero__links a,
+  .site-footer__block,
+  .site-footer__contact {
+    min-width: 0;
+  }
+
+  .site-footer a {
+    overflow-wrap: anywhere;
   }
 
   .site-header::after {
@@ -3134,9 +3174,20 @@ body.is-crazy-mode .site-footer {
   }
 
   .site-footer__marquee {
+    height: clamp(170px, 27svh, 230px);
     margin-left: -16px;
     margin-right: -16px;
+    min-height: clamp(170px, 27svh, 230px);
+    overflow: hidden;
     width: calc(100% + 32px);
+  }
+
+  .site-footer__marquee-track {
+    bottom: -0.08em;
+  }
+
+  .site-footer__marquee-group {
+    font-size: clamp(150px, 26svh, 220px);
   }
 
   .work-template__details div {
@@ -3176,7 +3227,9 @@ body.is-crazy-mode .site-footer {
   }
 
   .contact-hero h1 {
-    font-size: clamp(66px, 21vw, 124px);
+    font-size: clamp(48px, 15.8vw, 86px);
+    max-width: 100%;
+    overflow-wrap: normal;
   }
 
   .contact-hero__meta {
