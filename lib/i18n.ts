@@ -27,7 +27,7 @@ export const dictionary = {
     introBody:
       "Il sito non deve solo caricare veloce. Deve avere una presenza. Progetto e sviluppo esperienze bilingua, scalabili e facili da aggiornare, con un template progetti pensato per trasformare ogni case study in una piccola scena.",
     selected: "Progetti selezionati",
-    method: "Metodo",
+    method: "Come lavoro",
     methodItems: [
       "Collaborazione diretta, senza passaggi inutili",
       "Ascolto reale di obiettivi, persone e contesto",
@@ -67,7 +67,7 @@ export const dictionary = {
     introBody:
       "A website should not only load fast. It needs presence. I design and develop bilingual, scalable experiences with project templates that turn every case study into a small scene.",
     selected: "Selected Works",
-    method: "Method",
+    method: "How I work",
     methodItems: [
       "Direct collaboration, without unnecessary handovers",
       "Real attention to goals, people and context",

@@ -24,6 +24,7 @@ export default function Home({ params }: { params: { lang: Lang } }) {
   const methodLabel = params.lang === "it" ? "(03. metodo)" : "(03. method)";
   const servicesLabel = params.lang === "it" ? "(04. servizi)" : "(04. services)";
   const servicesCta = params.lang === "it" ? "Vai ai servizi" : "View services";
+  const projectsCta = params.lang === "it" ? "Vai ai progetti" : "View projects";
   const featuredProjects = projects
     .filter((project) => featuredProjectSlugs.includes(project.slug))
     .sort(
@@ -67,6 +68,9 @@ export default function Home({ params }: { params: { lang: Lang } }) {
             </h2>
           </div>
           <ProjectIndex lang={params.lang} projects={featuredProjects} />
+          <Link className="services__page-link" href={`/${params.lang}/selected-works`}>
+            <span>{projectsCta}</span>
+          </Link>
         </section>
 
         <section id="method" className="split-section section-pad" data-snap-section>
