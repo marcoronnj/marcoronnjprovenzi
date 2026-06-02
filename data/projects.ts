@@ -1050,21 +1050,617 @@ export const projects: Project[] = [
         }
       }
     ]
+  },
+  {
+    slug: "ajp-studios",
+    year: "2024",
+    client: "AJP Studios",
+    services: ["Design", "Sviluppo", "WordPress"],
+    accent: "#050505",
+    title: {
+      it: "AJP Studios",
+      en: "AJP Studios"
+    },
+    excerpt: {
+      it: "Design e sviluppo WordPress per uno studio di produzione audio/video specializzato in arte, cultura e musica.",
+      en: "WordPress design and development for an audio/video production studio focused on art, culture and music."
+    },
+    narrative: {
+      it: "Ho progettato e sviluppato in WordPress il sito di AJP Studios, spazio creativo e studio di produzione fondato da Alberto Nacci, specializzato in docufilm d'arte e cultura, opere video, progetti musicali live-in-studio e formazione. Il lavoro organizza un universo ricco di filmografia, servizi, workshop e contenuti editoriali dentro una struttura leggibile e aggiornabile, capace di far convivere archivio, racconto artistico e informazioni pratiche senza perdere ritmo.",
+      en: "I designed and developed the AJP Studios website in WordPress for the creative space and production studio founded by Alberto Nacci, specialised in art and culture documentaries, video works, live-in-studio music projects and training. The work organises a rich world of filmography, services, workshops and editorial content into a readable and easy-to-update structure, allowing archive, artistic narrative and practical information to coexist without losing rhythm."
+    },
+    details: [
+      {
+        label: {
+          it: "Lavoro svolto",
+          en: "Work"
+        },
+        value: {
+          it: "Design + Sviluppo",
+          en: "Design + Development"
+        }
+      },
+      {
+        label: {
+          it: "Tecnologia",
+          en: "Technology"
+        },
+        value: {
+          it: "WordPress",
+          en: "WordPress"
+        }
+      },
+      {
+        label: {
+          it: "Website",
+          en: "Website"
+        },
+        value: {
+          it: "ajp.it",
+          en: "ajp.it"
+        },
+        href: "https://ajp.it/"
+      }
+    ],
+    media: [
+      {
+        src: "/img/works/ajp/ajp-1.webp",
+        alt: {
+          it: "Homepage del sito AJP Studios",
+          en: "AJP Studios website homepage"
+        }
+      },
+      {
+        src: "/img/works/ajp/ajp-2.webp",
+        alt: {
+          it: "Pagina filmografia del sito AJP Studios",
+          en: "AJP Studios website filmography page"
+        }
+      },
+      {
+        src: "/img/works/ajp/ajp-3.webp",
+        alt: {
+          it: "Sezione formazione del sito AJP Studios",
+          en: "AJP Studios website training section"
+        }
+      }
+    ]
+  },
+  {
+    slug: "andrea-faccaro-af-training",
+    year: "2025",
+    client: "Andrea Faccaro - AF Training",
+    services: ["Sviluppo", "WordPress"],
+    accent: "#050505",
+    title: {
+      it: "Andrea Faccaro - AF Training",
+      en: "Andrea Faccaro - AF Training"
+    },
+    excerpt: {
+      it: "Sviluppo WordPress per il sito di Andrea Faccaro, tra training, bikefitting e consulting.",
+      en: "WordPress development for Andrea Faccaro's website, spanning training, bikefitting and consulting."
+    },
+    narrative: {
+      it: "Ho sviluppato in WordPress un sito progettato da Sam Sala Studio per Andrea Faccaro - AF Training, progetto dedicato ad allenamento, bikefitting e consulenza sportiva. Il lavoro traduce un servizio molto personale in una presenza digitale essenziale: poche sezioni, gerarchia chiara, contatti immediati e una struttura bilingue pensata per far emergere competenze, metodo e percorsi senza trasformare il sito in una brochure sportiva generica.",
+      en: "I developed a WordPress website designed by Sam Sala Studio for Andrea Faccaro - AF Training, a project dedicated to training, bikefitting and sports consulting. The work turns a very personal service into an essential digital presence: few sections, clear hierarchy, immediate contacts and a bilingual structure designed to bring out expertise, method and paths without turning the website into a generic sports brochure."
+    },
+    details: [
+      {
+        label: {
+          it: "Design",
+          en: "Design"
+        },
+        value: {
+          it: "Sam Sala Studio",
+          en: "Sam Sala Studio"
+        },
+        href: "https://samsala.studio/"
+      },
+      {
+        label: {
+          it: "Lavoro svolto",
+          en: "Work"
+        },
+        value: {
+          it: "Sviluppo",
+          en: "Development"
+        }
+      },
+      {
+        label: {
+          it: "Tecnologia",
+          en: "Technology"
+        },
+        value: {
+          it: "WordPress",
+          en: "WordPress"
+        }
+      },
+      {
+        label: {
+          it: "Website",
+          en: "Website"
+        },
+        value: {
+          it: "andreafaccaro.com",
+          en: "andreafaccaro.com"
+        },
+        href: "https://www.andreafaccaro.com/"
+      }
+    ],
+    media: [
+      {
+        src: "/img/works/andrea-faccaro/andrea-faccaro-1.webp",
+        alt: {
+          it: "Homepage del sito Andrea Faccaro - AF Training",
+          en: "Andrea Faccaro - AF Training website homepage"
+        }
+      },
+      {
+        src: "/img/works/andrea-faccaro/andrea-faccaro-2.webp",
+        alt: {
+          it: "Sezione servizi del sito Andrea Faccaro - AF Training",
+          en: "Andrea Faccaro - AF Training website services section"
+        }
+      },
+      {
+        src: "/img/works/andrea-faccaro/andrea-faccaro-3.webp",
+        alt: {
+          it: "Pagina profilo del sito Andrea Faccaro - AF Training",
+          en: "Andrea Faccaro - AF Training website profile page"
+        }
+      },
+      {
+        src: "/img/works/andrea-faccaro/andrea-faccaro-4.webp",
+        alt: {
+          it: "Pagina contatti del sito Andrea Faccaro - AF Training",
+          en: "Andrea Faccaro - AF Training website contact page"
+        }
+      }
+    ]
+  },
+  {
+    slug: "bali-1987",
+    year: "2020",
+    client: "Bali 1987",
+    services: ["Sviluppo", "WordPress", "WooCommerce"],
+    accent: "#050505",
+    title: {
+      it: "Bali 1987",
+      en: "Bali 1987"
+    },
+    excerpt: {
+      it: "Sviluppo WordPress e WooCommerce per un brand di gioielli artigianali Made in Italy.",
+      en: "WordPress and WooCommerce development for a Made in Italy artisanal jewellery brand."
+    },
+    narrative: {
+      it: "Ho sviluppato in WordPress e WooCommerce il sito di Bali 1987, brand di gioielli artigianali Made in Italy con collezioni, pezzi unici e vendita online. Il design era firmato Dario Bellusci: il mio lavoro si e' concentrato sulla realizzazione tecnica dell'e-commerce, costruendo una struttura capace di gestire categorie, prodotti, contenuti editoriali e flussi di acquisto in modo chiaro, coerente e aggiornabile.",
+      en: "I developed the Bali 1987 website in WordPress and WooCommerce for a Made in Italy artisanal jewellery brand with collections, one-of-a-kind pieces and online sales. The design was by Dario Bellusci: my work focused on the technical e-commerce build, creating a structure able to manage categories, products, editorial content and purchase flows in a clear, consistent and easy-to-update way."
+    },
+    details: [
+      {
+        label: {
+          it: "Design",
+          en: "Design"
+        },
+        value: {
+          it: "Dario Bellusci",
+          en: "Dario Bellusci"
+        },
+        href: "https://dariobellusci.eu/"
+      },
+      {
+        label: {
+          it: "Lavoro svolto",
+          en: "Work"
+        },
+        value: {
+          it: "Sviluppo",
+          en: "Development"
+        }
+      },
+      {
+        label: {
+          it: "Tecnologia",
+          en: "Technology"
+        },
+        value: {
+          it: "WordPress + WooCommerce",
+          en: "WordPress + WooCommerce"
+        }
+      },
+      {
+        label: {
+          it: "Website",
+          en: "Website"
+        },
+        value: {
+          it: "bali1987.it",
+          en: "bali1987.it"
+        },
+        href: "https://bali1987.it/"
+      }
+    ],
+    media: [
+      {
+        src: "/img/works/bali-1987/bali-1987-1.webp",
+        alt: {
+          it: "Homepage del sito Bali 1987",
+          en: "Bali 1987 website homepage"
+        }
+      },
+      {
+        src: "/img/works/bali-1987/bali-1987-2.webp",
+        alt: {
+          it: "Pagina collezione del sito Bali 1987",
+          en: "Bali 1987 website collection page"
+        }
+      },
+      {
+        src: "/img/works/bali-1987/bali-1987-3.webp",
+        alt: {
+          it: "Pagina prodotto del sito Bali 1987",
+          en: "Bali 1987 website product page"
+        }
+      }
+    ]
+  },
+  {
+    slug: "scegli-lo",
+    year: "2023",
+    client: "Scegli-LO",
+    services: ["Design", "Sviluppo", "WordPress", "Typeform"],
+    accent: "#050505",
+    title: {
+      it: "Scegli-LO",
+      en: "Scegli-LO"
+    },
+    excerpt: {
+      it: "Design e sviluppo WordPress con integrazione Typeform per un assicuratore digitale.",
+      en: "WordPress design and development with Typeform integration for a digital insurance advisor."
+    },
+    narrative: {
+      it: "Ho progettato e sviluppato in WordPress il sito di Scegli-LO, un assicuratore digitale pensato per aiutare le persone a scegliere la polizza piu' adatta attraverso un percorso guidato. Il lavoro integra Typeform come punto di accesso al questionario e costruisce attorno a LO una presenza chiara, diretta e riconoscibile: sezioni essenziali, messaggi semplici e una struttura pensata per portare l'utente dalla scoperta alla richiesta senza attrito.",
+      en: "I designed and developed the Scegli-LO website in WordPress, a digital insurance advisor created to help people choose the right policy through a guided path. The work integrates Typeform as the entry point to the questionnaire and builds a clear, direct and recognisable presence around LO: essential sections, simple messaging and a structure designed to move users from discovery to request without friction."
+    },
+    details: [
+      {
+        label: {
+          it: "Lavoro svolto",
+          en: "Work"
+        },
+        value: {
+          it: "Design + Sviluppo",
+          en: "Design + Development"
+        }
+      },
+      {
+        label: {
+          it: "Tecnologia",
+          en: "Technology"
+        },
+        value: {
+          it: "WordPress + Typeform",
+          en: "WordPress + Typeform"
+        }
+      },
+      {
+        label: {
+          it: "Website",
+          en: "Website"
+        },
+        value: {
+          it: "scegli-lo.com",
+          en: "scegli-lo.com"
+        },
+        href: "https://scegli-lo.com/"
+      }
+    ],
+    media: [
+      {
+        src: "/img/works/scegli-lo/scegli-lo-1.webp",
+        alt: {
+          it: "Homepage del sito Scegli-LO",
+          en: "Scegli-LO website homepage"
+        }
+      },
+      {
+        src: "/img/works/scegli-lo/scegli-lo-2.webp",
+        alt: {
+          it: "Sezione assicurazioni del sito Scegli-LO",
+          en: "Scegli-LO website insurance section"
+        }
+      },
+      {
+        src: "/img/works/scegli-lo/scegli-lo-3.webp",
+        alt: {
+          it: "Pagina polizze del sito Scegli-LO",
+          en: "Scegli-LO website policies page"
+        }
+      },
+      {
+        src: "/img/works/scegli-lo/scegli-lo-4.webp",
+        alt: {
+          it: "Questionario Typeform collegato al sito Scegli-LO",
+          en: "Typeform questionnaire connected to the Scegli-LO website"
+        }
+      }
+    ]
+  },
+  {
+    slug: "ombra-by-tresoldi",
+    year: "2025",
+    client: "Ombra By Tresoldi",
+    services: ["Design", "Sviluppo", "WordPress"],
+    accent: "#050505",
+    title: {
+      it: "Ombra By Tresoldi",
+      en: "Ombra By Tresoldi"
+    },
+    excerpt: {
+      it: "Design e sviluppo WordPress per O.M.B.R.A., locale a Bergamo tra miscelazione, piattini e vini naturali.",
+      en: "WordPress design and development for O.M.B.R.A., a Bergamo venue spanning mixology, small plates and natural wines."
+    },
+    narrative: {
+      it: "Ho progettato e sviluppato in WordPress il sito di Ombra By Tresoldi, locale nel cuore di Bergamo costruito attorno a miscelazione, piattini, vini naturali e brunch. Il lavoro doveva restare immediato e vivo: menu essenziale, racconto del luogo, orari, prenotazione, carta vini e gallery convivono in una struttura semplice da aggiornare, pensata per comunicare atmosfera e informazioni pratiche senza appesantire l'esperienza.",
+      en: "I designed and developed the Ombra By Tresoldi website in WordPress for a venue in the heart of Bergamo built around mixology, small plates, natural wines and brunch. The work needed to stay immediate and alive: essential navigation, story of the place, opening hours, booking, wine list and gallery coexist in an easy-to-update structure designed to communicate atmosphere and practical information without weighing the experience down."
+    },
+    details: [
+      {
+        label: {
+          it: "Lavoro svolto",
+          en: "Work"
+        },
+        value: {
+          it: "Design + Sviluppo",
+          en: "Design + Development"
+        }
+      },
+      {
+        label: {
+          it: "Tecnologia",
+          en: "Technology"
+        },
+        value: {
+          it: "WordPress",
+          en: "WordPress"
+        }
+      },
+      {
+        label: {
+          it: "Website",
+          en: "Website"
+        },
+        value: {
+          it: "ombrabergamo.it",
+          en: "ombrabergamo.it"
+        },
+        href: "https://www.ombrabergamo.it/"
+      }
+    ],
+    media: [
+      {
+        src: "/img/works/ombra/ombra-1.webp",
+        alt: {
+          it: "Homepage del sito Ombra By Tresoldi",
+          en: "Ombra By Tresoldi website homepage"
+        }
+      },
+      {
+        src: "/img/works/ombra/ombra-2.webp",
+        alt: {
+          it: "Sezione prenotazione del sito Ombra By Tresoldi",
+          en: "Ombra By Tresoldi website booking section"
+        }
+      },
+      {
+        src: "/img/works/ombra/ombra-3.webp",
+        alt: {
+          it: "Gallery del sito Ombra By Tresoldi",
+          en: "Ombra By Tresoldi website gallery"
+        }
+      }
+    ]
+  },
+  {
+    slug: "monica-mancini-restauro-dipinti",
+    year: "2025",
+    client: "Monica Mancini Restauro Dipinti",
+    services: ["Design", "Sviluppo", "WordPress"],
+    accent: "#050505",
+    title: {
+      it: "Monica Mancini Restauro Dipinti",
+      en: "Monica Mancini Restauro Dipinti"
+    },
+    excerpt: {
+      it: "Design e sviluppo WordPress per uno studio specializzato nella conservazione e nel restauro di opere d'arte.",
+      en: "WordPress design and development for a studio specialised in the conservation and restoration of artworks."
+    },
+    narrative: {
+      it: "Ho progettato e sviluppato in WordPress il sito di Monica Mancini Restauro Dipinti, studio specializzato nella conservazione di opere d'arte antiche e moderne, con competenze su dipinti su supporto ligneo, tessile e superfici decorate dell'architettura. Il progetto mette ordine in un patrimonio di restauri, profilo, servizi, qualifiche e news, con una struttura editoriale misurata che lascia parlare immagini, storia e metodo tecnico senza perdere chiarezza.",
+      en: "I designed and developed the Monica Mancini Restauro Dipinti website in WordPress for a studio specialised in the conservation of ancient and modern artworks, with expertise in paintings on wooden support, textile support and decorated architectural surfaces. The project brings order to a body of restorations, profile, services, qualifications and news, with a measured editorial structure that lets images, history and technical method speak without losing clarity."
+    },
+    details: [
+      {
+        label: {
+          it: "Lavoro svolto",
+          en: "Work"
+        },
+        value: {
+          it: "Design + Sviluppo",
+          en: "Design + Development"
+        }
+      },
+      {
+        label: {
+          it: "Tecnologia",
+          en: "Technology"
+        },
+        value: {
+          it: "WordPress",
+          en: "WordPress"
+        }
+      },
+      {
+        label: {
+          it: "Website",
+          en: "Website"
+        },
+        value: {
+          it: "mancinimonicarestaurodipinti.com",
+          en: "mancinimonicarestaurodipinti.com"
+        },
+        href: "https://mancinimonicarestaurodipinti.com/"
+      }
+    ],
+    media: [
+      {
+        src: "/img/works/monica-mancini/monica-mancini-1.webp",
+        alt: {
+          it: "Homepage del sito Monica Mancini Restauro Dipinti",
+          en: "Monica Mancini Restauro Dipinti website homepage"
+        }
+      },
+      {
+        src: "/img/works/monica-mancini/monica-mancini-2.webp",
+        alt: {
+          it: "Pagina profilo del sito Monica Mancini Restauro Dipinti",
+          en: "Monica Mancini Restauro Dipinti website profile page"
+        }
+      },
+      {
+        src: "/img/works/monica-mancini/monica-mancini-3.webp",
+        alt: {
+          it: "Archivio restauri del sito Monica Mancini Restauro Dipinti",
+          en: "Monica Mancini Restauro Dipinti website restorations archive"
+        }
+      },
+      {
+        src: "/img/works/monica-mancini/monica-mancini-4.webp",
+        alt: {
+          it: "Dettaglio restauro del sito Monica Mancini Restauro Dipinti",
+          en: "Monica Mancini Restauro Dipinti website restoration detail"
+        }
+      },
+      {
+        src: "/img/works/monica-mancini/monica-mancini-5.webp",
+        alt: {
+          it: "Sezione news del sito Monica Mancini Restauro Dipinti",
+          en: "Monica Mancini Restauro Dipinti website news section"
+        }
+      }
+    ]
+  },
+  {
+    slug: "nuova-litocolor-dabrazzi",
+    year: "2022",
+    client: "Nuova Litocolor Dabrazzi",
+    services: ["Sviluppo", "WordPress"],
+    accent: "#050505",
+    title: {
+      it: "Nuova Litocolor Dabrazzi",
+      en: "Nuova Litocolor Dabrazzi"
+    },
+    excerpt: {
+      it: "Sviluppo WordPress per Nuova Litocolor, azienda specializzata in packaging industriale.",
+      en: "WordPress development for Nuova Litocolor, a company specialised in industrial packaging."
+    },
+    narrative: {
+      it: "Ho sviluppato in WordPress il sito di Nuova Litocolor Dabrazzi, azienda che produce scatole ed espositori in cartone teso e microaccoppiato per il packaging industriale. Il lavoro porta online un racconto essenziale fatto di identita', competenze e archivio lavori, con una struttura leggera che rende leggibili materiali, processi e selezione di progetti senza perdere il carattere visivo del packaging.",
+      en: "I developed the Nuova Litocolor Dabrazzi website in WordPress for a company producing boxes and displays in solid and micro-corrugated cardboard for industrial packaging. The work brings online an essential story made of identity, expertise and project archive, with a light structure that makes materials, processes and selected works readable without losing the visual character of packaging."
+    },
+    details: [
+      {
+        label: {
+          it: "Design",
+          en: "Design"
+        },
+        value: {
+          it: "Vellooto",
+          en: "Vellooto"
+        },
+        href: "https://www.vellooto.it/"
+      },
+      {
+        label: {
+          it: "Lavoro svolto",
+          en: "Work"
+        },
+        value: {
+          it: "Sviluppo",
+          en: "Development"
+        }
+      },
+      {
+        label: {
+          it: "Tecnologia",
+          en: "Technology"
+        },
+        value: {
+          it: "WordPress",
+          en: "WordPress"
+        }
+      },
+      {
+        label: {
+          it: "Website",
+          en: "Website"
+        },
+        value: {
+          it: "nuovalitocolor.it",
+          en: "nuovalitocolor.it"
+        },
+        href: "https://nuovalitocolor.it/"
+      }
+    ],
+    media: [
+      {
+        src: "/img/works/nuova-litocolor/nuova-litocolor-1.webp",
+        alt: {
+          it: "Homepage del sito Nuova Litocolor Dabrazzi",
+          en: "Nuova Litocolor Dabrazzi website homepage"
+        }
+      },
+      {
+        src: "/img/works/nuova-litocolor/nuova-litocolor-2.webp",
+        alt: {
+          it: "Sezione lavori del sito Nuova Litocolor Dabrazzi",
+          en: "Nuova Litocolor Dabrazzi website works section"
+        }
+      },
+      {
+        src: "/img/works/nuova-litocolor/nuova-litocolor-3.webp",
+        alt: {
+          it: "Pagina processo del sito Nuova Litocolor Dabrazzi",
+          en: "Nuova Litocolor Dabrazzi website process page"
+        }
+      },
+      {
+        src: "/img/works/nuova-litocolor/nuova-litocolor-4.webp",
+        alt: {
+          it: "Pagina contatti del sito Nuova Litocolor Dabrazzi",
+          en: "Nuova Litocolor Dabrazzi website contact page"
+        }
+      }
+    ]
   }
 ];
 
 export const clients: ClientListItem[] = [
   {
-    name: "AJP Studios"
+    name: "AJP Studios",
+    slug: "ajp-studios"
   },
   {
-    name: "Andrea Faccaro - AF Training"
+    name: "Andrea Faccaro - AF Training",
+    slug: "andrea-faccaro-af-training"
   },
   {
     name: "Antico Opificio Sasso Alloro"
   },
   {
-    name: "Bali 1987"
+    name: "Bali 1987",
+    slug: "bali-1987"
   },
   {
     name: "Benedetta Bassanelli"
@@ -1074,9 +1670,6 @@ export const clients: ClientListItem[] = [
   },
   {
     name: "BG Cauzioni"
-  },
-  {
-    name: "Caffè del Tasso"
   },
   {
     name: "Campidapadel.it"
@@ -1091,9 +1684,6 @@ export const clients: ClientListItem[] = [
     name: "Cirelli Motor Company"
   },
   {
-    name: "Circolino"
-  },
-  {
     name: "Clo’et Design"
   },
   {
@@ -1104,9 +1694,6 @@ export const clients: ClientListItem[] = [
   },
   {
     name: "Dall’Albero All’Arte"
-  },
-  {
-    name: "Davide Casari"
   },
   {
     name: "Defendi Abbigliamento"
@@ -1180,10 +1767,10 @@ export const clients: ClientListItem[] = [
     name: "Isola Dello Sportivo"
   },
   {
-    name: "Just Run BG"
+    name: "JustRun Asd"
   },
   {
-    name: "JustRun Asd"
+    name: "JustRun BG"
   },
   {
     name: "Kira Padel"
@@ -1218,19 +1805,19 @@ export const clients: ClientListItem[] = [
     name: "Moei Design"
   },
   {
-    name: "Monica Mancini Restauro Dipinti"
+    name: "Monica Mancini Restauro Dipinti",
+    slug: "monica-mancini-restauro-dipinti"
   },
   {
     name: "Ninacare"
   },
   {
-    name: "Noemi Gangi"
+    name: "Nuova Litocolor Dabrazzi",
+    slug: "nuova-litocolor-dabrazzi"
   },
   {
-    name: "Nuova Litocolor Dabrazzi"
-  },
-  {
-    name: "Ombra By Tresoldi"
+    name: "Ombra By Tresoldi",
+    slug: "ombra-by-tresoldi"
   },
   {
     name: "Ottini Studio"
@@ -1267,7 +1854,8 @@ export const clients: ClientListItem[] = [
     name: "Run Like Locals"
   },
   {
-    name: "Scegli-LO"
+    name: "Scegli-LO",
+    slug: "scegli-lo"
   },
   {
     name: "Scuola dell’infanzia Beata Vergine Maria Immacolata di Barzana"
@@ -1281,9 +1869,6 @@ export const clients: ClientListItem[] = [
   {
     name: "Studio B-Quadro",
     slug: "studio-b-quadro"
-  },
-  {
-    name: "Tassino Eventi"
   },
   {
     name: "Tecnomec"

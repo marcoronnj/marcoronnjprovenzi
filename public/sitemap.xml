@@ -86,6 +86,41 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://marcoronnjprovenzi.com/it/projects/ajp-studios</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://marcoronnjprovenzi.com/it/projects/andrea-faccaro-af-training</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://marcoronnjprovenzi.com/it/projects/bali-1987</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://marcoronnjprovenzi.com/it/projects/scegli-lo</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://marcoronnjprovenzi.com/it/projects/ombra-by-tresoldi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://marcoronnjprovenzi.com/it/projects/monica-mancini-restauro-dipinti</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://marcoronnjprovenzi.com/it/projects/nuova-litocolor-dabrazzi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://marcoronnjprovenzi.com/en</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
@@ -167,6 +202,41 @@
   </url>
   <url>
     <loc>https://marcoronnjprovenzi.com/en/projects/esseci</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://marcoronnjprovenzi.com/en/projects/ajp-studios</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://marcoronnjprovenzi.com/en/projects/andrea-faccaro-af-training</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://marcoronnjprovenzi.com/en/projects/bali-1987</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://marcoronnjprovenzi.com/en/projects/scegli-lo</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://marcoronnjprovenzi.com/en/projects/ombra-by-tresoldi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://marcoronnjprovenzi.com/en/projects/monica-mancini-restauro-dipinti</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://marcoronnjprovenzi.com/en/projects/nuova-litocolor-dabrazzi</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

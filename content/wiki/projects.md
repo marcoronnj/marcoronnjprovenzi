@@ -32,6 +32,100 @@ Il campo Design va mostrato solo se presente.
 
 ## Progetti pubblicati
 
+### AJP Studios
+
+- Slug: `ajp-studios`
+- Anno: 2024
+- Cliente: AJP Studios
+- Lavoro svolto: Design + Sviluppo
+- Tecnologia: WordPress
+- Website: https://ajp.it/
+
+Descrizione IT:
+
+Ho progettato e sviluppato in WordPress il sito di AJP Studios, spazio creativo e studio di produzione fondato da Alberto Nacci, specializzato in docufilm d'arte e cultura, opere video, progetti musicali live-in-studio e formazione. Il lavoro organizza filmografia, servizi, workshop e contenuti editoriali dentro una struttura leggibile e aggiornabile.
+
+### Andrea Faccaro - AF Training
+
+- Slug: `andrea-faccaro-af-training`
+- Anno: 2025
+- Cliente: Andrea Faccaro - AF Training
+- Design: Sam Sala Studio
+- Lavoro svolto: Sviluppo
+- Tecnologia: WordPress
+- Website: https://www.andreafaccaro.com/
+
+Descrizione IT:
+
+Ho sviluppato in WordPress un sito progettato da Sam Sala Studio per Andrea Faccaro - AF Training, progetto dedicato ad allenamento, bikefitting e consulenza sportiva. Il lavoro traduce un servizio personale in una presenza digitale essenziale, bilingue e diretta.
+
+### Bali 1987
+
+- Slug: `bali-1987`
+- Anno: 2020
+- Cliente: Bali 1987
+- Design: Dario Bellusci
+- Lavoro svolto: Sviluppo
+- Tecnologia: WordPress + WooCommerce
+- Website: https://bali1987.it/
+
+Descrizione IT:
+
+Ho sviluppato in WordPress e WooCommerce il sito di Bali 1987, brand di gioielli artigianali Made in Italy con collezioni, pezzi unici e vendita online. Il design era firmato Dario Bellusci: il lavoro si e' concentrato sulla realizzazione tecnica dell'e-commerce e sulla gestione chiara di categorie, prodotti e contenuti editoriali.
+
+### Scegli-LO
+
+- Slug: `scegli-lo`
+- Anno: 2023
+- Cliente: Scegli-LO
+- Lavoro svolto: Design + Sviluppo
+- Tecnologia: WordPress + Typeform
+- Website: https://scegli-lo.com/
+
+Descrizione IT:
+
+Ho progettato e sviluppato in WordPress il sito di Scegli-LO, assicuratore digitale pensato per guidare le persone nella scelta della polizza piu' adatta. Il lavoro integra Typeform come accesso al questionario e costruisce attorno a LO una presenza chiara, riconoscibile e senza attrito.
+
+### Ombra By Tresoldi
+
+- Slug: `ombra-by-tresoldi`
+- Anno: 2025
+- Cliente: Ombra By Tresoldi
+- Lavoro svolto: Design + Sviluppo
+- Tecnologia: WordPress
+- Website: https://www.ombrabergamo.it/
+
+Descrizione IT:
+
+Ho progettato e sviluppato in WordPress il sito di Ombra By Tresoldi, locale nel cuore di Bergamo costruito attorno a miscelazione, piattini, vini naturali e brunch. Il lavoro organizza racconto del luogo, orari, prenotazione, carta vini e gallery in una struttura immediata e facile da aggiornare.
+
+### Monica Mancini Restauro Dipinti
+
+- Slug: `monica-mancini-restauro-dipinti`
+- Anno: 2025
+- Cliente: Monica Mancini Restauro Dipinti
+- Lavoro svolto: Design + Sviluppo
+- Tecnologia: WordPress
+- Website: https://mancinimonicarestaurodipinti.com/
+
+Descrizione IT:
+
+Ho progettato e sviluppato in WordPress il sito di Monica Mancini Restauro Dipinti, studio specializzato nella conservazione di opere d'arte antiche e moderne, con competenze su dipinti su supporto ligneo, tessile e superfici decorate dell'architettura. Il progetto mette ordine in restauri, profilo, servizi, qualifiche e news con una struttura editoriale misurata.
+
+### Nuova Litocolor Dabrazzi
+
+- Slug: `nuova-litocolor-dabrazzi`
+- Anno: 2022
+- Cliente: Nuova Litocolor Dabrazzi
+- Design: Vellooto
+- Lavoro svolto: Sviluppo
+- Tecnologia: WordPress
+- Website: https://nuovalitocolor.it/
+
+Descrizione IT:
+
+Ho sviluppato in WordPress il sito di Nuova Litocolor Dabrazzi, azienda che produce scatole ed espositori in cartone teso e microaccoppiato per il packaging industriale. Il lavoro porta online identita', competenze e archivio lavori in una struttura leggera, visiva e leggibile.
+
 ## Progetti in evidenza in home
 
 La home mostra solo una selezione editoriale di progetti in risalto, non tutto l'archivio.

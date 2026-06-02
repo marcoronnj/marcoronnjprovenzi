@@ -8,6 +8,9 @@ I clienti con pagina progetto interna devono essere linkati, in bold e con under
 
 ## Clienti con pagina interna
 
+- AJP Studios -> `ajp-studios`
+- Andrea Faccaro - AF Training -> `andrea-faccaro-af-training`
+- Bali 1987 -> `bali-1987`
 - EEIA -> `eeia`
 - EsseCi -> `esseci`
 - Giorgia Mantero Osteopata -> `giorgia-mantero-osteopata`
@@ -15,7 +18,11 @@ I clienti con pagina progetto interna devono essere linkati, in bold e con under
 - Impresa Edile Regonesi -> `impresa-edile-regonesi`
 - LAB Distribution -> `lab-distribution`
 - Michela Meni Studio -> `michela-meni-studio`
+- Monica Mancini Restauro Dipinti -> `monica-mancini-restauro-dipinti`
+- Nuova Litocolor Dabrazzi -> `nuova-litocolor-dabrazzi`
+- Ombra By Tresoldi -> `ombra-by-tresoldi`
 - R.A.T. Collective -> `rat-collective`
+- Scegli-LO -> `scegli-lo`
 - Studio B-Quadro -> `studio-b-quadro`
 - Tiziana Scarpati Nails -> `tiziana-scarpati-nails`
 - Vedrai -> `vedrai`
@@ -30,17 +37,14 @@ I clienti con pagina progetto interna devono essere linkati, in bold e con under
 - Benedetta Bassanelli
 - Bergamauto
 - BG Cauzioni
-- Caffe' del Tasso
 - Campidapadel.it
 - Cellular Store Dalmine
 - Christian Brogna
 - Cirelli Motor Company
-- Circolino
 - Clo'et Design
 - CM Meccanica Di Precisione
 - CMA Garden
 - Dall'Albero All'Arte
-- Davide Casari
 - Defendi Abbigliamento
 - EEIA
 - EGJ Arch
@@ -63,8 +67,8 @@ I clienti con pagina progetto interna devono essere linkati, in bold e con under
 - Ing. Mauro Magli Management
 - Innovation 4 Luxury
 - Isola Dello Sportivo
-- Just Run BG
 - JustRun Asd
+- JustRun BG
 - Kira Padel
 - La cucina circolare del Pentalfa
 - LAB Distribution
@@ -77,7 +81,6 @@ I clienti con pagina progetto interna devono essere linkati, in bold e con under
 - Moei Design
 - Monica Mancini Restauro Dipinti
 - Ninacare
-- Noemi Gangi
 - Nuova Litocolor Dabrazzi
 - Ombra By Tresoldi
 - Ottini Studio
@@ -96,7 +99,6 @@ I clienti con pagina progetto interna devono essere linkati, in bold e con under
 - Smoppy's Adventure
 - Sport Indoor
 - Studio B-Quadro
-- Tassino Eventi
 - Tecnomec
 - The Good Attitude
 - Thomas Capponi
