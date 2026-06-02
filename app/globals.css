@@ -70,10 +70,17 @@ body:not(.is-crazy-mode) .crazy-word {
 }
 
 body.is-crazy-mode .crazy-word {
-  display: inline-block;
+  color: inherit;
+  display: inline;
+  font: inherit;
   isolation: isolate;
+  letter-spacing: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
   position: relative;
-  vertical-align: baseline;
+  text-transform: inherit;
+  vertical-align: inherit;
 }
 
 body.is-crazy-mode .crazy-word::after {
@@ -81,12 +88,16 @@ body.is-crazy-mode .crazy-word::after {
   border-radius: 46% 39% 54% 33% / 36% 58% 31% 52%;
   clip-path: polygon(0 32%, 6% 16%, 22% 6%, 43% 11%, 61% 3%, 84% 14%, 100% 28%, 96% 78%, 79% 92%, 55% 86%, 31% 96%, 9% 84%, 2% 66%);
   content: "";
-  inset: -0.08em -0.14em -0.1em;
+  height: 1.12em;
+  left: -0.14em;
   opacity: 0;
   pointer-events: none;
   position: absolute;
+  top: 50%;
   transform: translateY(var(--crazy-word-shift-y, 0)) rotate(var(--crazy-word-tilt, 0deg)) scale(var(--crazy-word-scale-x, 1.06), var(--crazy-word-scale-y, 0.94));
   transform-origin: center;
+  translate: 0 -50%;
+  width: calc(100% + 0.28em);
   z-index: 2;
 }
 
