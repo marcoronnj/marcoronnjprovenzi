@@ -25,6 +25,9 @@ export const metadata: Metadata = {
   }
 };
 
+const iubendaConsentSetup =
+  '(function(w){try{var h=w.location.hostname;var d=h.endsWith("marcoronnjprovenzi.com")?"marcoronnjprovenzi.com":h.endsWith(".vercel.app")?h:"";w._iub=w._iub||{};w._iub.csConfiguration=Object.assign({},w._iub.csConfiguration||{},{askConsentAtCookiePolicyUpdate:false,invalidateConsentWithoutLog:false,localConsentPath:"/"},d?{localConsentDomain:d}:{});}catch(error){}})(window);';
+
 export default function RootLayout({
   children
 }: Readonly<{
@@ -33,6 +36,11 @@ export default function RootLayout({
   return (
     <html lang="it" suppressHydrationWarning>
       <body suppressHydrationWarning>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: iubendaConsentSetup
+          }}
+        />
         <script
           dangerouslySetInnerHTML={{
             __html:

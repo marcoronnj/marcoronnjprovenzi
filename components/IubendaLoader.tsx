@@ -21,6 +21,8 @@ export function IubendaLoader() {
     const hostname = window.location.hostname;
     const consentDomain = hostname.endsWith("marcoronnjprovenzi.com")
       ? "marcoronnjprovenzi.com"
+      : hostname.endsWith(".vercel.app")
+        ? hostname
       : undefined;
 
     iubendaWindow._iub = iubendaWindow._iub || {};
