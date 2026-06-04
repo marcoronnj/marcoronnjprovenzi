@@ -5,8 +5,6 @@ import { useEffect } from "react";
 const interactiveSelector = "a, button, [data-cursor]";
 const iubendaGeneratedSelector = [
   "#iubenda-cs-banner",
-  "#iubenda-pp-popup",
-  "#iubenda-pp-content",
   "[id^='iubenda-iframe']",
   ".iubenda-iframe",
   ".iubenda-modal",
