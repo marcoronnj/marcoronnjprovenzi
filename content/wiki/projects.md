@@ -165,10 +165,6 @@ Descrizione IT:
 
 Ho progettato e sviluppato in WordPress il sito di Cellular Store Dalmine, azienda della provincia di Bergamo che si occupa di vendita di smartphone, tablet, PC e accessori rigenerati, nuovi e usati, oltre alla riparazione di cellulari e dispositivi elettronici. Il lavoro ha dato forma a una vetrina prodotti facilmente gestibile dal cliente, che puo' inserire e modificare in autonomia smartphone e tablet in vendita.
 
-Nota asset:
-
-Le immagini della scheda non risultano ancora presenti in `public/img/works` al momento dell'inserimento.
-
 ### CMA Garden
 
 - Slug: `cma-garden`

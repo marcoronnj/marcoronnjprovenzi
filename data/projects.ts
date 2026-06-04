@@ -1941,7 +1941,43 @@ export const projects: Project[] = [
         }
       }
     ],
-    media: []
+    media: [
+      {
+        src: "/img/works/cellular-store-dalmine/cellular1.webp",
+        alt: {
+          it: "Homepage del sito Cellular Store Dalmine",
+          en: "Cellular Store Dalmine website homepage"
+        }
+      },
+      {
+        src: "/img/works/cellular-store-dalmine/cellular2.webp",
+        alt: {
+          it: "Vetrina prodotti del sito Cellular Store Dalmine",
+          en: "Cellular Store Dalmine website product showcase"
+        }
+      },
+      {
+        src: "/img/works/cellular-store-dalmine/cellular3.webp",
+        alt: {
+          it: "Pagina prodotti del sito Cellular Store Dalmine",
+          en: "Cellular Store Dalmine website products page"
+        }
+      },
+      {
+        src: "/img/works/cellular-store-dalmine/cellular4.webp",
+        alt: {
+          it: "Sezione servizi del sito Cellular Store Dalmine",
+          en: "Cellular Store Dalmine website services section"
+        }
+      },
+      {
+        src: "/img/works/cellular-store-dalmine/cellular5.webp",
+        alt: {
+          it: "Pagina contatti del sito Cellular Store Dalmine",
+          en: "Cellular Store Dalmine website contact page"
+        }
+      }
+    ]
   },
   {
     slug: "cma-garden",
