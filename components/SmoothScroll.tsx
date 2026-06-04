@@ -1,7 +1,8 @@
 "use client";
 
 import Lenis from "lenis";
-import { useEffect } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useRef } from "react";
 
 const SNAP_SELECTOR = "[data-snap-section]";
 const SNAP_IDLE_DELAY = 90;
@@ -9,8 +10,27 @@ const SNAP_DURATION = 0.64;
 const SNAP_TRIGGER_RATIO = 0.14;
 
 export function SmoothScroll() {
+  const lenisRef = useRef<Lenis | null>(null);
+  const pathname = usePathname();
+
+  // Scroll to top on every client-side route change (Next.js Link navigation).
+  // The language switch is the only case that intentionally preserves position via sessionStorage.
   useEffect(() => {
+    const lenis = lenisRef.current;
+    if (!lenis) return;
+
+    if (!window.sessionStorage.getItem("preserve-scroll-y")) {
+      lenis.scrollTo(0, { immediate: true });
+    }
+  }, [pathname]);
+
+  useEffect(() => {
+    // Prevent the browser from restoring a cached scroll position when the user
+    // navigates forward or backward — we manage scroll position ourselves.
+    history.scrollRestoration = "manual";
+
     const lenis = new Lenis({ lerp: 0.09, wheelMultiplier: 0.9 });
+    lenisRef.current = lenis;
     let frame = 0;
     let snapTimer: number | null = null;
     let isSnapping = false;
@@ -126,6 +146,8 @@ export function SmoothScroll() {
       const storedScrollY = window.sessionStorage.getItem("preserve-scroll-y");
 
       if (!storedScrollY) {
+        // No stored position = fresh page navigation, always start from the top.
+        lenis.scrollTo(0, { immediate: true });
         return;
       }
 
@@ -190,6 +212,7 @@ export function SmoothScroll() {
 
       document.removeEventListener("click", handleAnchorClick);
       cancelAnimationFrame(frame);
+      lenisRef.current = null;
       lenis.destroy();
     };
   }, []);
