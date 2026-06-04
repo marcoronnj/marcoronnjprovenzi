@@ -32,7 +32,7 @@ export function Footer({ lang }: FooterProps) {
           </p>
           <a
             href="https://www.iubenda.com/privacy-policy/73034085"
-            className="iubenda-white iubenda-noiframe iubenda-embed"
+            className="iubenda-nostyle iubenda-noiframe iubenda-embed"
             title="Privacy Policy "
           >
             Privacy Policy
@@ -45,7 +45,7 @@ export function Footer({ lang }: FooterProps) {
           />
           <a
             href="https://www.iubenda.com/privacy-policy/73034085/cookie-policy"
-            className="iubenda-white iubenda-noiframe iubenda-embed"
+            className="iubenda-nostyle iubenda-noiframe iubenda-embed"
             title="Cookie Policy "
           >
             Cookie Policy
@@ -56,6 +56,9 @@ export function Footer({ lang }: FooterProps) {
               __html: iubendaEmbedLoader
             }}
           />
+          <a href="#" className="iubenda-cs-preferences-link">
+            Preferenze
+          </a>
         </div>
 
         <nav className="site-footer__block" aria-label="Footer navigation">
