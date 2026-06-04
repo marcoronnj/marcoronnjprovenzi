@@ -2,6 +2,12 @@
 
 import { useEffect } from "react";
 
+type IubendaWindow = Window & {
+  _iub?: {
+    csConfiguration?: Record<string, unknown>;
+  };
+};
+
 // Module-level flag — survives re-renders and re-mounts. React Strict Mode
 // double-invokes effects in development, but this flag prevents any re-execution.
 let bootstrapped = false;
@@ -10,6 +16,21 @@ export function IubendaLoader() {
   useEffect(() => {
     if (bootstrapped) return;
     bootstrapped = true;
+
+    const iubendaWindow = window as IubendaWindow;
+    const hostname = window.location.hostname;
+    const consentDomain = hostname.endsWith("marcoronnjprovenzi.com")
+      ? "marcoronnjprovenzi.com"
+      : undefined;
+
+    iubendaWindow._iub = iubendaWindow._iub || {};
+    iubendaWindow._iub.csConfiguration = {
+      ...iubendaWindow._iub.csConfiguration,
+      askConsentAtCookiePolicyUpdate: false,
+      invalidateConsentWithoutLog: false,
+      localConsentPath: "/",
+      ...(consentDomain ? { localConsentDomain: consentDomain } : {})
+    };
 
     // Inject GTM scripts as Iubenda-blocked stubs (type="text/plain").
     // Placed via imperative DOM calls so React never reconciles or resets them.
