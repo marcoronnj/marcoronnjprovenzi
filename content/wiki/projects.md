@@ -126,6 +126,62 @@ Descrizione IT:
 
 Ho sviluppato in WordPress il sito di Nuova Litocolor Dabrazzi, azienda che produce scatole ed espositori in cartone teso e microaccoppiato per il packaging industriale. Il lavoro porta online identita', competenze e archivio lavori in una struttura leggera, visiva e leggibile.
 
+### ÉVORA - Luxury Shopping Tour
+
+- Slug: `evora-luxury-shopping-tour`
+- Anno: 2023
+- Cliente: ÉVORA - Luxury Shopping Tour
+- Lavoro svolto: Design + Sviluppo
+- Tecnologia: WordPress
+- Website: https://luxuryshoppingtour.com/
+
+Descrizione IT:
+
+Ho progettato e sviluppato in WordPress il sito di ÉVORA - Luxury Shopping Tour, esperienza dedicata allo shopping di alta gamma con personal shopper, trasporto privato e itinerari in destinazioni come Milano, Roma, Londra, Parigi, Venezia, Firenze, Cannes, Como e Serravalle Designer Outlet. Il lavoro organizza servizi, citta', prenotazione e racconto dell'esperienza dentro una struttura bilingue chiara.
+
+### Emisferia
+
+- Slug: `emisferia`
+- Anno: 2024
+- Cliente: Emisferia
+- Lavoro svolto: Design + Sviluppo
+- Tecnologia: WordPress
+- Website: https://www.emisferia.it/
+
+Descrizione IT:
+
+Ho progettato e sviluppato in WordPress il sito di Emisferia, Centro Psicopedagogico e Centro DSA a Treviolo, in provincia di Bergamo. Il progetto presenta interventi per adulti e famiglie, infanzia e adolescenza, terza eta', identita' di genere e LGBTQIA+, counseling aziendale, formazione per scuole e servizi dedicati ai Disturbi Specifici dell'Apprendimento.
+
+### Cellular Store Dalmine
+
+- Slug: `cellular-store-dalmine`
+- Anno: 2021
+- Cliente: Cellular Store Dalmine
+- Lavoro svolto: Design + Sviluppo
+- Tecnologia: WordPress
+- Website: non mostrato nella scheda progetto
+
+Descrizione IT:
+
+Ho progettato e sviluppato in WordPress il sito di Cellular Store Dalmine, azienda della provincia di Bergamo che si occupa di vendita di smartphone, tablet, PC e accessori rigenerati, nuovi e usati, oltre alla riparazione di cellulari e dispositivi elettronici. Il lavoro ha dato forma a una vetrina prodotti facilmente gestibile dal cliente, che puo' inserire e modificare in autonomia smartphone e tablet in vendita.
+
+Nota asset:
+
+Le immagini della scheda non risultano ancora presenti in `public/img/works` al momento dell'inserimento.
+
+### CMA Garden
+
+- Slug: `cma-garden`
+- Anno: 2022
+- Cliente: CMA Garden
+- Lavoro svolto: Design + Sviluppo
+- Tecnologia: WordPress + WooCommerce
+- Website: https://cmagarden.it/
+
+Descrizione IT:
+
+Ho progettato e sviluppato in WordPress e WooCommerce il sito di CMA Garden, negozio di articoli per il giardinaggio a Osio Sotto, in provincia di Bergamo. L'azienda lavora da oltre 40 anni con professionisti del verde, appassionati e privati, tra vendita, riparazione, manutenzione, noleggio, robot tagliaerba, impianti antizanzare e prodotti per il tappeto erboso.
+
 ## Progetti in evidenza in home
 
 La home mostra solo una selezione editoriale di progetti in risalto, non tutto l'archivio.

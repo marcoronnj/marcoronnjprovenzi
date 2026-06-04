@@ -26,6 +26,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://marcoronnjprovenzi.com/it/projects/indoor-outdoor-cosmetics</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://marcoronnjprovenzi.com/it/projects/von-meiss-architekten</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -121,6 +126,26 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://marcoronnjprovenzi.com/it/projects/evora-luxury-shopping-tour</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://marcoronnjprovenzi.com/it/projects/emisferia</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://marcoronnjprovenzi.com/it/projects/cellular-store-dalmine</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://marcoronnjprovenzi.com/it/projects/cma-garden</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://marcoronnjprovenzi.com/en</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
@@ -142,6 +167,11 @@
   </url>
   <url>
     <loc>https://marcoronnjprovenzi.com/en/selected-works</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://marcoronnjprovenzi.com/en/projects/indoor-outdoor-cosmetics</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -237,6 +267,26 @@
   </url>
   <url>
     <loc>https://marcoronnjprovenzi.com/en/projects/nuova-litocolor-dabrazzi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://marcoronnjprovenzi.com/en/projects/evora-luxury-shopping-tour</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://marcoronnjprovenzi.com/en/projects/emisferia</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://marcoronnjprovenzi.com/en/projects/cellular-store-dalmine</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://marcoronnjprovenzi.com/en/projects/cma-garden</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

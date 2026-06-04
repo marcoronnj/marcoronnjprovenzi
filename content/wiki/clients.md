@@ -11,8 +11,12 @@ I clienti con pagina progetto interna devono essere linkati, in bold e con under
 - AJP Studios -> `ajp-studios`
 - Andrea Faccaro - AF Training -> `andrea-faccaro-af-training`
 - Bali 1987 -> `bali-1987`
+- Cellular Store Dalmine -> `cellular-store-dalmine`
+- CMA Garden -> `cma-garden`
 - EEIA -> `eeia`
+- Emisferia -> `emisferia`
 - EsseCi -> `esseci`
+- ÉVORA - Luxury Shopping Tour -> `evora-luxury-shopping-tour`
 - Giorgia Mantero Osteopata -> `giorgia-mantero-osteopata`
 - Helvetic Leaf -> `helvetic-leaf`
 - Impresa Edile Regonesi -> `impresa-edile-regonesi`
@@ -52,7 +56,7 @@ I clienti con pagina progetto interna devono essere linkati, in bold e con under
 - Emendamento18
 - Emisferia
 - EsseCi
-- Evora - Luxury Shopping Tour
+- ÉVORA - Luxury Shopping Tour
 - Frames by Alberto Nacci
 - Furnel e Pirol
 - Gelateria Stracciatella

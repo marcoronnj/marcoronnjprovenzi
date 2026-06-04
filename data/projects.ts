@@ -1743,6 +1743,287 @@ export const projects: Project[] = [
         }
       }
     ]
+  },
+  {
+    slug: "evora-luxury-shopping-tour",
+    year: "2023",
+    client: "ÉVORA - Luxury Shopping Tour",
+    services: ["Design", "Sviluppo", "WordPress"],
+    accent: "#050505",
+    title: {
+      it: "ÉVORA - Luxury Shopping Tour",
+      en: "ÉVORA - Luxury Shopping Tour"
+    },
+    excerpt: {
+      it: "Design e sviluppo WordPress per un progetto di luxury shopping tour con personal shopper e percorsi su misura.",
+      en: "WordPress design and development for a luxury shopping tour project with personal shoppers and tailored itineraries."
+    },
+    narrative: {
+      it: "Ho progettato e sviluppato in WordPress il sito di ÉVORA - Luxury Shopping Tour, esperienza dedicata allo shopping di alta gamma con personal shopper, trasporto privato e itinerari in destinazioni come Milano, Roma, Londra, Parigi, Venezia, Firenze, Cannes, Como e Serravalle Designer Outlet. Il lavoro organizza servizi, città, prenotazione e racconto dell'esperienza dentro una struttura bilingue chiara, pensata per comunicare esclusività senza perdere immediatezza.",
+      en: "I designed and developed the ÉVORA - Luxury Shopping Tour website in WordPress, an experience dedicated to high-end shopping with personal shoppers, private transportation and itineraries across destinations such as Milan, Rome, London, Paris, Venice, Florence, Cannes, Como and Serravalle Designer Outlet. The work organises services, cities, booking and the experience story into a clear bilingual structure designed to communicate exclusivity without losing immediacy."
+    },
+    details: [
+      {
+        label: {
+          it: "Lavoro svolto",
+          en: "Work"
+        },
+        value: {
+          it: "Design + Sviluppo",
+          en: "Design + Development"
+        }
+      },
+      {
+        label: {
+          it: "Tecnologia",
+          en: "Technology"
+        },
+        value: {
+          it: "WordPress",
+          en: "WordPress"
+        }
+      },
+      {
+        label: {
+          it: "Website",
+          en: "Website"
+        },
+        value: {
+          it: "luxuryshoppingtour.com",
+          en: "luxuryshoppingtour.com"
+        },
+        href: "https://luxuryshoppingtour.com/"
+      }
+    ],
+    media: [
+      {
+        src: "/img/works/evora/evora-1.webp",
+        alt: {
+          it: "Homepage del sito ÉVORA - Luxury Shopping Tour",
+          en: "ÉVORA - Luxury Shopping Tour website homepage"
+        }
+      },
+      {
+        src: "/img/works/evora/evora-2.webp",
+        alt: {
+          it: "Sezione servizi del sito ÉVORA - Luxury Shopping Tour",
+          en: "ÉVORA - Luxury Shopping Tour website services section"
+        }
+      },
+      {
+        src: "/img/works/evora/evora-3.webp",
+        alt: {
+          it: "Pagina destinazioni del sito ÉVORA - Luxury Shopping Tour",
+          en: "ÉVORA - Luxury Shopping Tour website destinations page"
+        }
+      },
+      {
+        src: "/img/works/evora/evora-4.webp",
+        alt: {
+          it: "Pagina prenotazione del sito ÉVORA - Luxury Shopping Tour",
+          en: "ÉVORA - Luxury Shopping Tour website booking page"
+        }
+      }
+    ]
+  },
+  {
+    slug: "emisferia",
+    year: "2024",
+    client: "Emisferia",
+    services: ["Design", "Sviluppo", "WordPress"],
+    accent: "#050505",
+    title: {
+      it: "Emisferia",
+      en: "Emisferia"
+    },
+    excerpt: {
+      it: "Design e sviluppo WordPress per un centro psicopedagogico e Centro DSA in provincia di Bergamo.",
+      en: "WordPress design and development for a psychopedagogical centre and DSA centre near Bergamo."
+    },
+    narrative: {
+      it: "Ho progettato e sviluppato in WordPress il sito di Emisferia, Centro Psicopedagogico e Centro DSA a Treviolo, in provincia di Bergamo. Il progetto presenta interventi per adulti e famiglie, infanzia e adolescenza, terza età, identità di genere e LGBTQIA+, counseling aziendale, formazione per scuole e servizi dedicati ai Disturbi Specifici dell'Apprendimento. Il lavoro mette ordine in un'offerta ampia e delicata, con servizi leggibili, news, contatti e una struttura pensata per far arrivare le persone al percorso giusto senza rumore.",
+      en: "I designed and developed the Emisferia website in WordPress for a psychopedagogical centre and DSA centre in Treviolo, near Bergamo. The project presents services for adults and families, childhood and adolescence, third age, gender identity and LGBTQIA+, corporate counselling, school training and support for Specific Learning Disorders. The work brings order to a broad and sensitive offer, with readable services, news, contacts and a structure designed to guide people towards the right path without noise."
+    },
+    details: [
+      {
+        label: {
+          it: "Lavoro svolto",
+          en: "Work"
+        },
+        value: {
+          it: "Design + Sviluppo",
+          en: "Design + Development"
+        }
+      },
+      {
+        label: {
+          it: "Tecnologia",
+          en: "Technology"
+        },
+        value: {
+          it: "WordPress",
+          en: "WordPress"
+        }
+      },
+      {
+        label: {
+          it: "Website",
+          en: "Website"
+        },
+        value: {
+          it: "emisferia.it",
+          en: "emisferia.it"
+        },
+        href: "https://www.emisferia.it/"
+      }
+    ],
+    media: [
+      {
+        src: "/img/works/emisferia/emisferia-1.webp",
+        alt: {
+          it: "Homepage del sito Emisferia",
+          en: "Emisferia website homepage"
+        }
+      },
+      {
+        src: "/img/works/emisferia/emisferia-2.webp",
+        alt: {
+          it: "Sezione servizi del sito Emisferia",
+          en: "Emisferia website services section"
+        }
+      },
+      {
+        src: "/img/works/emisferia/emisferia-3.webp",
+        alt: {
+          it: "Pagina contatti del sito Emisferia",
+          en: "Emisferia website contact page"
+        }
+      }
+    ]
+  },
+  {
+    slug: "cellular-store-dalmine",
+    year: "2021",
+    client: "Cellular Store Dalmine",
+    services: ["Design", "Sviluppo", "WordPress"],
+    accent: "#050505",
+    title: {
+      it: "Cellular Store Dalmine",
+      en: "Cellular Store Dalmine"
+    },
+    excerpt: {
+      it: "Design e sviluppo WordPress per un negozio di smartphone, tablet, PC e riparazioni a Dalmine.",
+      en: "WordPress design and development for a smartphone, tablet, PC and repair store in Dalmine."
+    },
+    narrative: {
+      it: "Ho progettato e sviluppato in WordPress il sito di Cellular Store Dalmine, azienda della provincia di Bergamo che si occupa di vendita di smartphone, tablet, PC e accessori rigenerati, nuovi e usati, oltre alla riparazione di cellulari e dispositivi elettronici. Il lavoro ha dato forma a una vetrina prodotti facilmente gestibile dal cliente, che può inserire e modificare in autonomia smartphone e tablet in vendita, mantenendo il sito aggiornato senza dipendere da interventi tecnici continui.",
+      en: "I designed and developed the Cellular Store Dalmine website in WordPress for a company near Bergamo selling refurbished, new and used smartphones, tablets, PCs and accessories, as well as repairing phones and electronic devices. The work shaped an easy-to-manage product showcase, allowing the client to add and edit smartphones and tablets for sale independently, keeping the website updated without relying on continuous technical intervention."
+    },
+    details: [
+      {
+        label: {
+          it: "Lavoro svolto",
+          en: "Work"
+        },
+        value: {
+          it: "Design + Sviluppo",
+          en: "Design + Development"
+        }
+      },
+      {
+        label: {
+          it: "Tecnologia",
+          en: "Technology"
+        },
+        value: {
+          it: "WordPress",
+          en: "WordPress"
+        }
+      }
+    ],
+    media: []
+  },
+  {
+    slug: "cma-garden",
+    year: "2022",
+    client: "CMA Garden",
+    services: ["Design", "Sviluppo", "WordPress", "WooCommerce"],
+    accent: "#050505",
+    title: {
+      it: "CMA Garden",
+      en: "CMA Garden"
+    },
+    excerpt: {
+      it: "Design e sviluppo WordPress e WooCommerce per un negozio di articoli e macchine per il giardinaggio.",
+      en: "WordPress and WooCommerce design and development for a garden products and machinery store."
+    },
+    narrative: {
+      it: "Ho progettato e sviluppato in WordPress e WooCommerce il sito di CMA Garden, negozio di articoli per il giardinaggio a Osio Sotto, in provincia di Bergamo. L'azienda lavora da oltre 40 anni con professionisti del verde, appassionati e privati, tra vendita, riparazione, manutenzione, noleggio, robot tagliaerba, impianti antizanzare e prodotti per il tappeto erboso. Il sito organizza servizi, catalogo e prodotti in vetrina dentro una struttura commerciale chiara, aggiornabile e pronta a gestire offerte e contenuti in autonomia.",
+      en: "I designed and developed the CMA Garden website in WordPress and WooCommerce for a garden products store in Osio Sotto, near Bergamo. The company has worked for more than 40 years with green professionals, enthusiasts and private clients, covering sales, repairs, maintenance, rental, robot lawn mowers, anti-mosquito systems and lawn care products. The website organises services, catalogue and featured products into a clear commercial structure that is easy to update and ready to manage offers and content independently."
+    },
+    details: [
+      {
+        label: {
+          it: "Lavoro svolto",
+          en: "Work"
+        },
+        value: {
+          it: "Design + Sviluppo",
+          en: "Design + Development"
+        }
+      },
+      {
+        label: {
+          it: "Tecnologia",
+          en: "Technology"
+        },
+        value: {
+          it: "WordPress + WooCommerce",
+          en: "WordPress + WooCommerce"
+        }
+      },
+      {
+        label: {
+          it: "Website",
+          en: "Website"
+        },
+        value: {
+          it: "cmagarden.it",
+          en: "cmagarden.it"
+        },
+        href: "https://cmagarden.it/"
+      }
+    ],
+    media: [
+      {
+        src: "/img/works/cma-garden/cma-garden-1.webp",
+        alt: {
+          it: "Homepage del sito CMA Garden",
+          en: "CMA Garden website homepage"
+        }
+      },
+      {
+        src: "/img/works/cma-garden/cma-garden-2.webp",
+        alt: {
+          it: "Sezione servizi del sito CMA Garden",
+          en: "CMA Garden website services section"
+        }
+      },
+      {
+        src: "/img/works/cma-garden/cma-garden-3.webp",
+        alt: {
+          it: "Catalogo prodotti del sito CMA Garden",
+          en: "CMA Garden website product catalogue"
+        }
+      },
+      {
+        src: "/img/works/cma-garden/cma-garden-4.webp",
+        alt: {
+          it: "Pagina prodotto del sito CMA Garden",
+          en: "CMA Garden website product page"
+        }
+      }
+    ]
   }
 ];
 
@@ -1775,7 +2056,8 @@ export const clients: ClientListItem[] = [
     name: "Campidapadel.it"
   },
   {
-    name: "Cellular Store Dalmine"
+    name: "Cellular Store Dalmine",
+    slug: "cellular-store-dalmine"
   },
   {
     name: "Christian Brogna"
@@ -1790,7 +2072,8 @@ export const clients: ClientListItem[] = [
     name: "CM Meccanica Di Precisione"
   },
   {
-    name: "CMA Garden"
+    name: "CMA Garden",
+    slug: "cma-garden"
   },
   {
     name: "Dall’Albero All’Arte"
@@ -1809,14 +2092,16 @@ export const clients: ClientListItem[] = [
     name: "Emendamento18"
   },
   {
-    name: "Emisferia"
+    name: "Emisferia",
+    slug: "emisferia"
   },
   {
     name: "EsseCi",
     slug: "esseci"
   },
   {
-    name: "Evora - Luxury Shopping Tour"
+    name: "ÉVORA - Luxury Shopping Tour",
+    slug: "evora-luxury-shopping-tour"
   },
   {
     name: "Frames by Alberto Nacci"
