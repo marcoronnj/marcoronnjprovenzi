@@ -586,9 +586,14 @@ main { isolation: isolate; }
   border-bottom: 1px solid rgba(255, 255, 255, 0.28);
 }
 
-.menu-panel__links span {
+.menu-panel__index {
   font-size: 14px;
   text-align: center;
+}
+
+.menu-panel__label {
+  display: block;
+  min-width: 0;
 }
 
 .menu-panel__controls {
@@ -3203,6 +3208,23 @@ body.is-crazy-mode .site-footer {
     height: 10px;
     inset: -5px 0 auto 0;
     width: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu-panel__links {
+    width: 100%;
+  }
+
+  .menu-panel__links a {
+    grid-template-columns: 44px minmax(0, 1fr);
+    justify-content: stretch;
+    width: 100%;
+  }
+
+  .menu-panel__label {
+    justify-self: stretch;
+    text-align: right;
   }
 }
 

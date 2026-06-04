@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     "Web designer freelance e web developer per siti custom, esperienze interattive e brand digitali.",
   manifest: "/site.webmanifest",
   formatDetection: {
+    address: false,
     telephone: false
   },
   icons: {

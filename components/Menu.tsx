@@ -212,8 +212,8 @@ export function Menu({ lang, nav }: MenuProps) {
         <div className="menu-panel__links">
           {nav.map((item, index) => (
             <a href={navHref(sections[index])} key={item} onClick={() => setOpen(false)}>
-              <span>0{index + 1}</span>
-              {item}
+              <span className="menu-panel__index">0{index + 1}</span>
+              <span className="menu-panel__label">{item}</span>
             </a>
           ))}
         </div>
