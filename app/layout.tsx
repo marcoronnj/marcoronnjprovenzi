@@ -48,6 +48,11 @@ export default function RootLayout({
               "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\n\ngtag('config', 'G-MXP5SGC7PN', {\n  allow_linker: false,\n  url_passthrough: false\n});"
           }}
         />
+        <script
+          type="text/javascript"
+          src="https://embeds.iubenda.com/widgets/71a333f7-4a3b-45d7-a3e5-572e0454438c.js"
+          async
+        />
       </head>
       <body suppressHydrationWarning>
         <script
