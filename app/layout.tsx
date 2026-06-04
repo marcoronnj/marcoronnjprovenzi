@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   description:
     "Web designer freelance e web developer per siti custom, esperienze interattive e brand digitali.",
   manifest: "/site.webmanifest",
+  formatDetection: {
+    telephone: false
+  },
   icons: {
     icon: [
       { url: "/favicon.svg", type: "image/svg+xml" },
