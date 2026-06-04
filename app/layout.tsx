@@ -31,6 +31,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="it" suppressHydrationWarning>
+      <head>
+        <script
+          className="_iub_cs_activate"
+          type="text/plain"
+          async
+          {...{
+            suppressedsrc: "https://www.googletagmanager.com/gtag/js?id=G-MXP5SGC7PN"
+          }}
+        />
+        <script
+          className="_iub_cs_activate-inline"
+          type="text/plain"
+          dangerouslySetInnerHTML={{
+            __html:
+              "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\n\ngtag('config', 'G-MXP5SGC7PN', {\n  allow_linker: false,\n  url_passthrough: false\n});"
+          }}
+        />
+      </head>
       <body suppressHydrationWarning>
         <script
           dangerouslySetInnerHTML={{
