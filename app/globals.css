@@ -204,10 +204,20 @@ body.has-custom-cursor button {
 
 html.has-custom-cursor #iubenda-cs-banner,
 html.has-custom-cursor #iubenda-cs-banner *,
-html.has-custom-cursor [id^="iubenda"],
-html.has-custom-cursor [id^="iubenda"] *,
-html.has-custom-cursor [class*="iubenda"],
-html.has-custom-cursor [class*="iubenda"] * {
+html.has-custom-cursor [id^="iubenda-iframe"],
+html.has-custom-cursor [id^="iubenda-iframe"] *,
+html.has-custom-cursor .iubenda-iframe,
+html.has-custom-cursor .iubenda-iframe *,
+html.has-custom-cursor .iubenda-modal,
+html.has-custom-cursor .iubenda-modal *,
+html.has-custom-cursor .iubenda-modal-overlay,
+html.has-custom-cursor .iubenda-modal-overlay *,
+html.has-custom-cursor .iubenda-cs-preferences,
+html.has-custom-cursor .iubenda-cs-preferences *,
+html.has-custom-cursor .iubenda-cs-preferences-overlay,
+html.has-custom-cursor .iubenda-cs-preferences-overlay *,
+html.has-custom-cursor .iubenda-tp-alert,
+html.has-custom-cursor .iubenda-tp-alert * {
   cursor: auto !important;
 }
 

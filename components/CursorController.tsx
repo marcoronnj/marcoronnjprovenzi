@@ -3,7 +3,16 @@
 import { useEffect } from "react";
 
 const interactiveSelector = "a, button, [data-cursor]";
-const iubendaSelector = "#iubenda-cs-banner, [id^='iubenda'], [class*='iubenda']";
+const iubendaGeneratedSelector = [
+  "#iubenda-cs-banner",
+  "[id^='iubenda-iframe']",
+  ".iubenda-iframe",
+  ".iubenda-modal",
+  ".iubenda-modal-overlay",
+  ".iubenda-cs-preferences",
+  ".iubenda-cs-preferences-overlay",
+  ".iubenda-tp-alert"
+].join(", ");
 const cursorClasses = [
   "has-custom-cursor",
   "is-link-hover",
@@ -55,7 +64,7 @@ export function CursorController() {
 
     const updateCursorTarget = (x: number, y: number) => {
       const element = document.elementFromPoint(x, y);
-      const isIubendaHover = Boolean(element?.closest(iubendaSelector));
+      const isIubendaHover = Boolean(element?.closest(iubendaGeneratedSelector));
 
       setIubendaCursorState(isIubendaHover);
       if (isIubendaHover) return;
@@ -80,7 +89,7 @@ export function CursorController() {
 
     const over = (event: PointerEvent) => {
       const isIubendaHover = event.target instanceof Element
-        ? Boolean(event.target.closest(iubendaSelector))
+        ? Boolean(event.target.closest(iubendaGeneratedSelector))
         : false;
 
       setIubendaCursorState(isIubendaHover);
