@@ -72,6 +72,27 @@ function createInitialBackgroundLayout() {
   });
 }
 
+function createFieldLines(lineCount: number) {
+  return Array.from({ length: lineCount }, (_, index) => {
+    const x = (index / (lineCount - 1)) * 100;
+    const wobbleA = index % 2 === 0 ? 0.35 : -0.28;
+    const wobbleB = index % 3 === 0 ? -0.42 : 0.31;
+    const wobbleC = index % 4 === 0 ? 0.22 : -0.18;
+
+    return {
+      d: `M ${x.toFixed(2)} 0 L ${x.toFixed(2)} 100`,
+      handD: [
+        `M ${(x + wobbleA).toFixed(2)} 0`,
+        `C ${(x + wobbleB).toFixed(2)} 15 ${(x + wobbleC).toFixed(2)} 22 ${(x - wobbleA).toFixed(2)} 35`,
+        `S ${(x + wobbleB).toFixed(2)} 58 ${(x + wobbleA).toFixed(2)} 70`,
+        `S ${(x + wobbleC).toFixed(2)} 92 ${(x - wobbleB).toFixed(2)} 100`
+      ].join(" "),
+      key: `v-${lineCount}-${index}`,
+      opacity: 0.3
+    };
+  });
+}
+
 export function HeroStage({
   kicker,
   line,
@@ -135,26 +156,8 @@ export function HeroStage({
     return { phrase, unused: backgroundLayout };
   }, [backgroundLayout, revealPhrase]);
 
-  const fieldLines = useMemo(() => {
-    return Array.from({ length: 13 }, (_, index) => {
-      const x = (index / 12) * 100;
-      const wobbleA = index % 2 === 0 ? 0.35 : -0.28;
-      const wobbleB = index % 3 === 0 ? -0.42 : 0.31;
-      const wobbleC = index % 4 === 0 ? 0.22 : -0.18;
-
-      return {
-        d: `M ${x.toFixed(2)} 0 L ${x.toFixed(2)} 100`,
-        handD: [
-          `M ${(x + wobbleA).toFixed(2)} 0`,
-          `C ${(x + wobbleB).toFixed(2)} 15 ${(x + wobbleC).toFixed(2)} 22 ${(x - wobbleA).toFixed(2)} 35`,
-          `S ${(x + wobbleB).toFixed(2)} 58 ${(x + wobbleA).toFixed(2)} 70`,
-          `S ${(x + wobbleC).toFixed(2)} 92 ${(x - wobbleB).toFixed(2)} 100`
-        ].join(" "),
-        key: `v-${index}`,
-        opacity: 0.3
-      };
-    });
-  }, []);
+  const desktopFieldLines = useMemo(() => createFieldLines(13), []);
+  const mobileFieldLines = useMemo(() => createFieldLines(9), []);
 
   useEffect(() => {
     const down = (event: KeyboardEvent) => {
@@ -250,6 +253,25 @@ export function HeroStage({
     ));
   }
 
+  function renderFieldLines(fieldLines: ReturnType<typeof createFieldLines>) {
+    return fieldLines.map((fieldLine) => (
+      <g key={fieldLine.key}>
+        <path
+          className="hero-field__line hero-field__line--straight"
+          d={fieldLine.d}
+          pathLength={100}
+          style={{ "--line-opacity": fieldLine.opacity } as React.CSSProperties}
+        />
+        <path
+          className="hero-field__line hero-field__line--hand"
+          d={fieldLine.handD}
+          pathLength={100}
+          style={{ "--line-opacity": fieldLine.opacity } as React.CSSProperties}
+        />
+      </g>
+    ));
+  }
+
   return (
     <section
       className={`hero ${pressed ? "is-pressed" : ""} ${complete ? "is-complete" : ""}`}
@@ -285,23 +307,21 @@ export function HeroStage({
       }
     >
       <div className="hero-field-wrap" aria-hidden="true">
-        <svg className="hero-field" aria-hidden="true" viewBox="0 0 100 100" preserveAspectRatio="none">
-          {fieldLines.map((fieldLine) => (
-            <g key={fieldLine.key}>
-              <path
-                className="hero-field__line hero-field__line--straight"
-                d={fieldLine.d}
-                pathLength={100}
-                style={{ "--line-opacity": fieldLine.opacity } as React.CSSProperties}
-              />
-              <path
-                className="hero-field__line hero-field__line--hand"
-                d={fieldLine.handD}
-                pathLength={100}
-                style={{ "--line-opacity": fieldLine.opacity } as React.CSSProperties}
-              />
-            </g>
-          ))}
+        <svg
+          className="hero-field hero-field--desktop"
+          aria-hidden="true"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        >
+          {renderFieldLines(desktopFieldLines)}
+        </svg>
+        <svg
+          className="hero-field hero-field--mobile"
+          aria-hidden="true"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        >
+          {renderFieldLines(mobileFieldLines)}
         </svg>
       </div>
       <div className="hero__meta">

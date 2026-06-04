@@ -692,6 +692,10 @@ body.is-crazy-mode .menu-panel__links a {
   backface-visibility: hidden;
 }
 
+.hero-field--mobile {
+  display: none;
+}
+
 .hero-field__line {
   fill: none;
   opacity: var(--line-opacity);
@@ -3212,6 +3216,19 @@ body.is-crazy-mode .site-footer {
 }
 
 @media (max-width: 767px) {
+  .hero-field-wrap {
+    left: 0;
+    right: 0;
+  }
+
+  .hero-field--desktop {
+    display: none;
+  }
+
+  .hero-field--mobile {
+    display: block;
+  }
+
   .menu-panel__links {
     width: 100%;
   }
@@ -3323,8 +3340,8 @@ body.is-crazy-mode .site-footer {
   }
 
   .hero-field {
-    inset: 44px 16px 16px;
-    width: calc(100% - 32px);
+    inset: 44px 0 16px;
+    width: 100%;
     height: calc(100% - 60px);
   }
 
