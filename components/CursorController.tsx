@@ -3,7 +3,14 @@
 import { useEffect } from "react";
 
 const interactiveSelector = "a, button, [data-cursor]";
-const cursorClasses = ["has-custom-cursor", "is-link-hover", "is-cursor-next", "is-cursor-prev"];
+const iubendaSelector = "#iubenda-cs-banner, [id^='iubenda'], [class*='iubenda']";
+const cursorClasses = [
+  "has-custom-cursor",
+  "is-link-hover",
+  "is-cursor-next",
+  "is-cursor-prev",
+  "is-iubenda-hover"
+];
 
 function isTouchDevice() {
   if (typeof window === "undefined") return true;
@@ -32,16 +39,28 @@ export function CursorController() {
       document.body.classList.remove("is-link-hover", "is-cursor-next", "is-cursor-prev");
     };
 
+    const setIubendaCursorState = (isIubendaHover: boolean) => {
+      document.body.classList.toggle("is-iubenda-hover", isIubendaHover);
+      if (isIubendaHover) resetCursorState();
+    };
+
     const setCursorState = (element: HTMLElement) => {
       const cursorType = element.dataset.cursor?.toLowerCase() ?? "";
 
+      document.body.classList.remove("is-iubenda-hover");
       document.body.classList.add("is-link-hover");
       document.body.classList.toggle("is-cursor-next", cursorType.includes("next"));
       document.body.classList.toggle("is-cursor-prev", cursorType.includes("prev"));
     };
 
     const updateCursorTarget = (x: number, y: number) => {
-      const target = document.elementFromPoint(x, y)?.closest<HTMLElement>(interactiveSelector);
+      const element = document.elementFromPoint(x, y);
+      const isIubendaHover = Boolean(element?.closest(iubendaSelector));
+
+      setIubendaCursorState(isIubendaHover);
+      if (isIubendaHover) return;
+
+      const target = element?.closest<HTMLElement>(interactiveSelector);
 
       if (target) {
         setCursorState(target);
@@ -60,6 +79,13 @@ export function CursorController() {
     };
 
     const over = (event: PointerEvent) => {
+      const isIubendaHover = event.target instanceof Element
+        ? Boolean(event.target.closest(iubendaSelector))
+        : false;
+
+      setIubendaCursorState(isIubendaHover);
+      if (isIubendaHover) return;
+
       const target = event.target instanceof Element
         ? event.target.closest<HTMLElement>(interactiveSelector)
         : null;
@@ -76,6 +102,7 @@ export function CursorController() {
         : null;
 
       if (target && target === relatedTarget) return;
+      document.body.classList.remove("is-iubenda-hover");
       resetCursorState();
     };
 
@@ -88,7 +115,7 @@ export function CursorController() {
       document.removeEventListener("pointerover", over);
       document.removeEventListener("pointerout", out);
       document.documentElement.classList.remove("has-custom-cursor");
-      document.body.classList.remove("has-custom-cursor");
+      document.body.classList.remove("has-custom-cursor", "is-iubenda-hover");
       document.body.style.removeProperty("--cursor-x");
       document.body.style.removeProperty("--cursor-y");
       resetCursorState();
