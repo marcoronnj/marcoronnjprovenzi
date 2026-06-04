@@ -817,7 +817,7 @@ body.is-crazy-mode .hero.is-pressed .hero-field__line--hand {
   color: var(--bg);
 }
 
-.hero.is-pressed .hero-field__line {
+.hero.is-pressed .hero-field__line--straight {
   opacity: 0.3;
   stroke: #ffffff;
 }
