@@ -2660,7 +2660,7 @@ body.is-crazy-mode .about-method__crazy-image {
 
 @keyframes footer-marquee {
   to {
-    transform: translateX(-33.333%);
+    transform: translateX(calc(-100% / 3));
   }
 }
 
@@ -2751,7 +2751,7 @@ body.is-crazy-mode .site-footer {
 
 .site-footer__marquee {
   align-self: end;
-  contain: layout paint;
+  contain: layout;
   display: block;
   grid-row: 3;
   height: 40dvh;
@@ -2773,6 +2773,7 @@ body.is-crazy-mode .site-footer {
   min-width: max-content;
   position: absolute;
   transform: translate3d(0, 0, 0);
+  width: max-content;
   will-change: transform;
 }
 
@@ -2785,6 +2786,7 @@ body.is-crazy-mode .site-footer {
   font-weight: 900;
   gap: 0.12em;
   line-height: 1;
+  min-width: max-content;
   padding-right: 0.12em;
   text-transform: uppercase;
   white-space: nowrap;
@@ -2792,7 +2794,11 @@ body.is-crazy-mode .site-footer {
 
 .site-footer__marquee-group span {
   display: inline-block;
+  flex: 0 0 auto;
   line-height: 1;
+  min-width: max-content;
+  padding-inline: 0.025em;
+  white-space: nowrap;
 }
 
 @media (min-width: 1600px) {
