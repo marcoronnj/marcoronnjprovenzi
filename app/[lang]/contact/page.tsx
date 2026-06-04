@@ -58,7 +58,7 @@ export default function ContactPage({ params }: { params: { lang: Lang } }) {
         switchLabel={copy.langSwitch as string}
       />
       <main className="contact-page">
-        <section className="contact-hero section-pad" data-snap-section>
+        <section className="contact-hero section-pad">
           <Image
             className="contact-hero__crazy-image"
             src="/img/crazy-alfie-00008.webp"

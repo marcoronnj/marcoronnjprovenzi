@@ -253,7 +253,7 @@ export function HeroStage({
   return (
     <section
       className={`hero ${pressed ? "is-pressed" : ""} ${complete ? "is-complete" : ""}`}
-      data-snap-section
+     
       onPointerDown={startHold}
       onPointerCancel={stopHold}
       onPointerLeave={stopHold}

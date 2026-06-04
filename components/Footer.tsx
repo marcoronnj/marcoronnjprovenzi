@@ -5,8 +5,10 @@ type FooterProps = {
   lang: Lang;
 };
 
+// Guard prevents cdn.iubenda.com/iubenda.js from loading more than once per page,
+// which would re-initialize the Cookie Solution and re-show the consent banner.
 const iubendaEmbedLoader =
-  '(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);';
+  '(function(w,d){if(d.getElementById("iubenda-embed-js")){return;}var loader=function(){if(d.getElementById("iubenda-embed-js")){return;}var s=d.createElement("script");s.id="iubenda-embed-js";s.src="https://cdn.iubenda.com/iubenda.js";var tag=d.getElementsByTagName("script")[0];tag.parentNode.insertBefore(s,tag);};if(w.addEventListener){w.addEventListener("load",loader,false);}else if(w.attachEvent){w.attachEvent("onload",loader);}else{w.onload=loader;}})(window,document);';
 
 export function Footer({ lang }: FooterProps) {
   const currentYear = new Date().getFullYear();
@@ -16,7 +18,7 @@ export function Footer({ lang }: FooterProps) {
   const contactLabel = lang === "it" ? "Contatti" : "Contact";
 
   return (
-    <footer className="site-footer" data-snap-section>
+    <footer className="site-footer">
       <div className="site-footer__top">
         <Link className="site-footer__mark" href={homeHref} aria-label="Marco Ronnj Provenzi home">
           <span />
@@ -37,12 +39,6 @@ export function Footer({ lang }: FooterProps) {
           >
             Privacy Policy
           </a>
-          <script
-            type="text/javascript"
-            dangerouslySetInnerHTML={{
-              __html: iubendaEmbedLoader
-            }}
-          />
           <a
             href="https://www.iubenda.com/privacy-policy/73034085/cookie-policy"
             className="iubenda-nostyle iubenda-noiframe iubenda-embed"

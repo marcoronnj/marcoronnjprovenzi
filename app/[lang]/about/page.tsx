@@ -90,7 +90,7 @@ export default function AboutPage({ params }: { params: { lang: Lang } }) {
         switchLabel={copy.langSwitch as string}
       />
       <main className="about-page">
-        <section className="about-hero" data-snap-section>
+        <section className="about-hero">
           <div className="about-hero__intro">
             <p>{page.intro}</p>
           </div>
@@ -114,7 +114,7 @@ export default function AboutPage({ params }: { params: { lang: Lang } }) {
           <h1>{page.title}</h1>
         </section>
 
-        <section className="about-profile section-pad" data-snap-section>
+        <section className="about-profile section-pad">
           <div className="about-profile__statement">
             <span>({params.lang === "it" ? "01. profilo" : "01. profile"})</span>
             <p>{page.lead}</p>
@@ -133,7 +133,7 @@ export default function AboutPage({ params }: { params: { lang: Lang } }) {
           </div>
         </section>
 
-        <section className="about-method section-pad" data-snap-section>
+        <section className="about-method section-pad">
           <Image
             className="about-method__crazy-image"
             src="/img/crazy-alfie-00004.webp"

@@ -278,11 +278,6 @@ body.is-crazy-mode #projects::after {
   z-index: 8;
 }
 
-[data-snap-section] {
-  scroll-margin-top: 0;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-}
 
 .site-header {
   align-items: center;

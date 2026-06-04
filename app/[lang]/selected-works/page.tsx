@@ -21,7 +21,7 @@ export default function SelectedWorksPage({ params }: { params: { lang: Lang } }
         switchLabel={copy.langSwitch as string}
       />
       <main className="selected-page">
-        <section className="clients-page" data-snap-section>
+        <section className="clients-page">
           <header className="clients-page__header">
             <h1>
               <span>SELECTED</span>

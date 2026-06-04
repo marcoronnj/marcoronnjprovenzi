@@ -51,7 +51,7 @@ Usi:
 ## Layout
 
 - Sezioni principali alte almeno `100dvh`.
-- Snap/scroll assistito per far agganciare le sezioni.
+- Scroll libero senza snap: le sezioni non si agganciano automaticamente.
 - Navbar con riga lunga quanto il container, non full width.
 - Footer da 100dvh, bianco in normal mode e giallo in crazy mode.
 - Home con sezioni: hero, manifesto, selected works/clienti, metodo, servizi, contatto.

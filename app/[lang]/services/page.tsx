@@ -126,14 +126,14 @@ export default function ServicesPage({ params }: { params: { lang: Lang } }) {
         switchLabel={copy.langSwitch as string}
       />
       <main className="services-page">
-        <section className="services-hero section-pad" data-snap-section>
+        <section className="services-hero section-pad">
           <div>
             <h1>{page.title}*</h1>
             <p>* {page.subtitle}</p>
           </div>
         </section>
 
-        <section className="services-platforms section-pad" data-snap-section>
+        <section className="services-platforms section-pad">
           <div className="services-section-head">
             <span>{page.platformsLabel}</span>
             <h2>{page.platformsTitle}</h2>
@@ -149,7 +149,7 @@ export default function ServicesPage({ params }: { params: { lang: Lang } }) {
           </div>
         </section>
 
-        <section className="services-quality section-pad" data-snap-section>
+        <section className="services-quality section-pad">
           <Image
             className="services-quality__crazy-image"
             src="/img/crazy-alfie-00001.webp"
@@ -169,7 +169,7 @@ export default function ServicesPage({ params }: { params: { lang: Lang } }) {
           </ol>
         </section>
 
-        <section className="services-complete section-pad" data-snap-section>
+        <section className="services-complete section-pad">
           <div className="services-section-head">
             <span>{page.completeLabel}</span>
             <h2>{page.completeTitle}</h2>

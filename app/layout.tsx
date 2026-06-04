@@ -49,6 +49,7 @@ export default function RootLayout({
           }}
         />
         <script
+          id="iubenda-cs"
           type="text/javascript"
           src="https://embeds.iubenda.com/widgets/71a333f7-4a3b-45d7-a3e5-572e0454438c.js"
           async

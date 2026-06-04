@@ -46,7 +46,7 @@ export default function ProjectPage({
         switchLabel={copy.langSwitch as string}
       />
       <main className="project-page">
-        <section className="work-template" data-snap-section>
+        <section className="work-template">
           <aside className="work-template__aside">
             <header className="work-template__title">
               <span>({params.lang === "it" ? "01. cliente" : "01. client"})</span>
@@ -98,7 +98,7 @@ export default function ProjectPage({
           </div>
         </section>
 
-        <section className="work-narrative section-pad" data-snap-section>
+        <section className="work-narrative section-pad">
           <div className="work-narrative__copy">
             <span>({params.lang === "it" ? "02. lavoro" : "02. work"})</span>
             <p>{project.narrative[params.lang]}</p>

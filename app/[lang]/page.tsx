@@ -49,7 +49,7 @@ export default function Home({ params }: { params: { lang: Lang } }) {
           revealPhrase={copy.heroReveal as string}
         />
 
-        <section id="about" className="intro manifesto section-pad" data-snap-section>
+        <section id="about" className="intro manifesto section-pad">
           <div className="manifesto-copy">
             <span>(01. manifesto)</span>
             <h2>{copy.introTitle as string}</h2>
@@ -57,7 +57,7 @@ export default function Home({ params }: { params: { lang: Lang } }) {
           </div>
         </section>
 
-        <section id="projects" className="section-pad" data-snap-section>
+        <section id="projects" className="section-pad">
           <div className="section-heading section-heading--projects">
             <span>{clientsLabel}</span>
             <h2>
@@ -73,7 +73,7 @@ export default function Home({ params }: { params: { lang: Lang } }) {
           </Link>
         </section>
 
-        <section id="method" className="split-section section-pad" data-snap-section>
+        <section id="method" className="split-section section-pad">
           <div>
             <span>{methodLabel}</span>
             <h2>{copy.method as string}</h2>
@@ -85,7 +85,7 @@ export default function Home({ params }: { params: { lang: Lang } }) {
           </ol>
         </section>
 
-        <section id="services" className="services section-pad" data-snap-section>
+        <section id="services" className="services section-pad">
           <Image
             className="services__crazy-image"
             src="/img/crazy-alfie-00002.webp"
@@ -108,7 +108,7 @@ export default function Home({ params }: { params: { lang: Lang } }) {
           </Link>
         </section>
 
-        <section id="contact" className="contact" data-snap-section>
+        <section id="contact" className="contact">
           <span>{params.lang === "it" ? "(05. contatti)" : "(05. contact)"}</span>
           <p>{copy.contactBody as string}</p>
           <a className="contact__cta" href="mailto:hello@marcoronnjprovenzi.com">
