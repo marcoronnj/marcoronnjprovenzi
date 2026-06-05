@@ -121,7 +121,8 @@ export function generateMetadata({ params }: { params: { lang: Lang } }) {
       description,
       url: `https://marcoronnjprovenzi.com/${params.lang}/services`,
       locale: params.lang === "it" ? "it_IT" : "en_US",
-      type: "website"
+      type: "website",
+      images: [{ url: `/${params.lang}/opengraph-image`, width: 1200, height: 630, type: "image/png" }]
     }
   };
 }
