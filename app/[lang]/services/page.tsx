@@ -107,11 +107,21 @@ export function generateMetadata({ params }: { params: { lang: Lang } }) {
   if (!isLang(params.lang)) return {};
   const copy = servicesCopy[params.lang];
 
+  const title = `${params.lang === "it" ? "Servizi" : "Services"} - Marco Ronnj Provenzi`;
+  const description = copy.subtitle;
+
   return {
-    title: `${params.lang === "it" ? "Servizi" : "Services"} - Marco Ronnj Provenzi`,
-    description: copy.subtitle,
+    title,
+    description,
     alternates: {
       canonical: `/${params.lang}/services`
+    },
+    openGraph: {
+      title,
+      description,
+      url: `https://marcoronnjprovenzi.com/${params.lang}/services`,
+      locale: params.lang === "it" ? "it_IT" : "en_US",
+      type: "website"
     }
   };
 }

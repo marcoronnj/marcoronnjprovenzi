@@ -71,11 +71,21 @@ export function generateMetadata({ params }: { params: { lang: Lang } }) {
   if (!isLang(params.lang)) return {};
   const copy = aboutCopy[params.lang];
 
+  const title = `About - Marco Ronnj Provenzi`;
+  const description = copy.lead;
+
   return {
-    title: `About - Marco Ronnj Provenzi`,
-    description: copy.lead,
+    title,
+    description,
     alternates: {
       canonical: `/${params.lang}/about`
+    },
+    openGraph: {
+      title,
+      description,
+      url: `https://marcoronnjprovenzi.com/${params.lang}/about`,
+      locale: params.lang === "it" ? "it_IT" : "en_US",
+      type: "website"
     }
   };
 }

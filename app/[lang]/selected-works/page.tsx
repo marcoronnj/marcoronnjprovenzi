@@ -9,9 +9,23 @@ export function generateStaticParams() {
 }
 
 export function generateMetadata({ params }: { params: { lang: Lang } }) {
+  const title = `Selected Works - Marco Ronnj Provenzi`;
+  const description = params.lang === "it"
+    ? "Tutti i progetti di Marco Ronnj Provenzi: siti custom, e-commerce, landing page e brand digitali."
+    : "All projects by Marco Ronnj Provenzi: custom websites, e-commerce, landing pages and digital brands.";
+
   return {
+    title,
+    description,
     alternates: {
       canonical: `/${params.lang}/selected-works`
+    },
+    openGraph: {
+      title,
+      description,
+      url: `https://marcoronnjprovenzi.com/${params.lang}/selected-works`,
+      locale: params.lang === "it" ? "it_IT" : "en_US",
+      type: "website"
     }
   };
 }

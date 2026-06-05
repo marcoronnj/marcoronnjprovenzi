@@ -18,9 +18,23 @@ const featuredProjectSlugs = [
 ];
 
 export function generateMetadata({ params }: { params: { lang: Lang } }) {
+  if (!isLang(params.lang)) return {};
+  const copy = dictionary[params.lang];
+  const title = copy.metaTitle as string;
+  const description = copy.metaDescription as string;
+
   return {
+    title,
+    description,
     alternates: {
       canonical: `/${params.lang}`
+    },
+    openGraph: {
+      title,
+      description,
+      url: `https://marcoronnjprovenzi.com/${params.lang}`,
+      locale: params.lang === "it" ? "it_IT" : "en_US",
+      type: "website"
     }
   };
 }

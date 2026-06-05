@@ -21,11 +21,21 @@ export function generateMetadata({
   const project = projects.find((item) => item.slug === params.slug);
   if (!project) return {};
 
+  const title = `${project.title[params.lang]} - Marco Ronnj Provenzi`;
+  const description = project.excerpt[params.lang];
+
   return {
-    title: `${project.title[params.lang]} - Marco Ronnj Provenzi`,
-    description: project.excerpt[params.lang],
+    title,
+    description,
     alternates: {
       canonical: `/${params.lang}/projects/${params.slug}`
+    },
+    openGraph: {
+      title,
+      description,
+      url: `https://marcoronnjprovenzi.com/${params.lang}/projects/${params.slug}`,
+      locale: params.lang === "it" ? "it_IT" : "en_US",
+      type: "website"
     }
   };
 }

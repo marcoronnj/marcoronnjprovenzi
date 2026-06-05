@@ -39,11 +39,21 @@ export function generateMetadata({ params }: { params: { lang: Lang } }) {
   if (!isLang(params.lang)) return {};
   const copy = contactCopy[params.lang];
 
+  const title = `${copy.title} - Marco Ronnj Provenzi`;
+  const description = copy.body;
+
   return {
-    title: `${copy.title} - Marco Ronnj Provenzi`,
-    description: copy.body,
+    title,
+    description,
     alternates: {
       canonical: `/${params.lang}/contact`
+    },
+    openGraph: {
+      title,
+      description,
+      url: `https://marcoronnjprovenzi.com/${params.lang}/contact`,
+      locale: params.lang === "it" ? "it_IT" : "en_US",
+      type: "website"
     }
   };
 }
