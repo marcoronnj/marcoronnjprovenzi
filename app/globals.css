@@ -1,5 +1,14 @@
 @import url("https://use.typekit.net/xhp8bgi.css");
-@import url("https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap");
+
+@font-face {
+  font-family: "Kvltura";
+  src:
+    url("/fonts/Kvltura.woff2") format("woff2"),
+    url("/fonts/Kvltura.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --bg: #ffffff;
@@ -62,7 +71,12 @@ body {
 
 body.is-crazy-mode {
   --bg: var(--acid);
-  --title-font: "protest-revolution", "Protest Revolution", var(--sans);
+  --title-font: "Kvltura", var(--sans);
+  --menu-link-size: clamp(34px, 5.8vw, 94px);
+  --hero-title-size: clamp(58px, 9.65vw, 173px);
+  --manifesto-size: clamp(36px, 3.85vw, 78px);
+  --section-title-size: clamp(27px, 3.35vw, 58px);
+  --contact-title-size: clamp(25px, 4.25vw, 69px);
 }
 
 body:not(.is-crazy-mode) .crazy-word {
@@ -2624,6 +2638,74 @@ body.is-crazy-mode .about-method__crazy-image {
   padding: 24px;
 }
 
+/* crazy mode: explicit font-size bumps (~12%) for hardcoded --title-font elements */
+
+body.is-crazy-mode .hero-reveal {
+  font-size: clamp(60px, 10.75vw, 175px);
+}
+
+body.is-crazy-mode .project-row__title {
+  font-size: 25px;
+}
+
+body.is-crazy-mode .split-section li {
+  font-size: clamp(18px, 2.25vw, 34px);
+}
+
+body.is-crazy-mode .service-grid p {
+  font-size: clamp(15px, 1.45vw, 25px);
+}
+
+body.is-crazy-mode .contact-hero h1 {
+  font-size: clamp(92px, 20.2vw, 370px);
+}
+
+body.is-crazy-mode .services-hero h1 {
+  font-size: clamp(19px, 1.8vw, 34px);
+}
+
+body.is-crazy-mode .services-section-head h2 {
+  font-size: clamp(34px, 5.95vw, 108px);
+}
+
+body.is-crazy-mode .services-platforms__list h3 {
+  font-size: clamp(27px, 4.05vw, 72px);
+}
+
+body.is-crazy-mode .project-hero h1 {
+  font-size: clamp(45px, 7.85vw, 117px);
+}
+
+body.is-crazy-mode .clients-page__header h1,
+body.is-crazy-mode .clients-page__header span {
+  font-size: clamp(58px, 11vw, 197px);
+}
+
+body.is-crazy-mode .clients-page__header > span {
+  font-size: clamp(43px, 8.5vw, 152px);
+}
+
+body.is-crazy-mode .client-list a,
+body.is-crazy-mode .client-list p {
+  font-size: clamp(17px, 1.2vw, 24px);
+}
+
+body.is-crazy-mode .about-hero h1 {
+  font-size: clamp(92px, 16.8vw, 291px);
+}
+
+body.is-crazy-mode .about-method__lead p {
+  font-size: clamp(27px, 3.6vw, 65px);
+}
+
+body.is-crazy-mode .next-project strong {
+  font-size: clamp(34px, 6.7vw, 94px);
+}
+
+body.is-crazy-mode .site-footer__marquee-group {
+  font-size: 44dvh;
+}
+
 @keyframes vibrate {
   0% {
     transform: translate(var(--shake-x-a), var(--shake-y-a)) rotate(var(--shake-r-a));
@@ -2831,6 +2913,14 @@ body.is-crazy-mode .site-footer {
     --contact-title-size: clamp(26px, 4.1vw, 72px);
     --selected-lead-size: clamp(16px, 1.5vw, 24px);
   }
+
+  body.is-crazy-mode {
+    --menu-link-size: clamp(43px, 6.7vw, 112px);
+    --hero-title-size: clamp(69px, 9.2vw, 184px);
+    --manifesto-size: clamp(47px, 3.65vw, 85px);
+    --section-title-size: clamp(31px, 3.6vw, 65px);
+    --contact-title-size: clamp(29px, 4.6vw, 81px);
+  }
 }
 
 @media (max-width: 1280px) {
@@ -2853,6 +2943,14 @@ body.is-crazy-mode .site-footer {
     --service-title-size: clamp(14px, 1.6vw, 24px);
     --contact-title-size: clamp(18px, 2.8vw, 40px);
     --selected-lead-size: clamp(13px, 1.2vw, 18px);
+  }
+
+  body.is-crazy-mode {
+    --menu-link-size: clamp(27px, 5.05vw, 72px);
+    --hero-title-size: clamp(45px, 7.85vw, 117px);
+    --manifesto-size: clamp(32px, 3.75vw, 52px);
+    --section-title-size: clamp(22px, 2.7vw, 45px);
+    --contact-title-size: clamp(20px, 3.15vw, 45px);
   }
 
   .site-header {
@@ -2923,6 +3021,13 @@ body.is-crazy-mode .site-footer {
     --service-title-size: 14px;
     --contact-title-size: clamp(16px, 6vw, 28px);
     --selected-lead-size: 14px;
+  }
+
+  body.is-crazy-mode {
+    --menu-link-size: clamp(25px, 7.85vw, 52px);
+    --hero-title-size: clamp(38px, 11.2vw, 81px);
+    --section-title-size: clamp(20px, 6.7vw, 36px);
+    --contact-title-size: clamp(18px, 6.7vw, 31px);
   }
 
   .site-header {
@@ -3213,6 +3318,14 @@ body.is-crazy-mode .site-footer {
     inset: -5px 0 auto 0;
     width: auto;
   }
+
+  body.is-crazy-mode .hero-reveal {
+    font-size: clamp(43px, 12.3vw, 96px);
+  }
+
+  body.is-crazy-mode .site-footer__marquee-group {
+    font-size: clamp(202px, 34.7svh, 325px);
+  }
 }
 
 @media (max-width: 767px) {
@@ -3264,6 +3377,13 @@ body.is-crazy-mode .site-footer {
     --service-title-size: 13px;
     --contact-title-size: clamp(14px, 8vw, 24px);
     --selected-lead-size: 13px;
+  }
+
+  body.is-crazy-mode {
+    --hero-title-size: clamp(32px, 10.1vw, 40px);
+    --manifesto-size: clamp(28px, 9.2vw, 43px);
+    --section-title-size: clamp(18px, 9vw, 27px);
+    --contact-title-size: clamp(16px, 9vw, 27px);
   }
 
   .site-header,
@@ -3442,6 +3562,18 @@ body.is-crazy-mode .site-footer {
     height: auto;
     left: 50%;
     width: 100vw;
+  }
+
+  body.is-crazy-mode .contact-hero h1 {
+    font-size: clamp(54px, 17.7vw, 96px);
+  }
+
+  body.is-crazy-mode .about-hero h1 {
+    font-size: clamp(81px, 26.9vw, 148px);
+  }
+
+  body.is-crazy-mode .site-footer__marquee-group {
+    font-size: clamp(168px, 29.1svh, 246px);
   }
 
   .services-section-head,
