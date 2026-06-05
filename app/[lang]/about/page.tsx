@@ -118,12 +118,13 @@ export default function AboutPage({ params }: { params: { lang: Lang } }) {
               priority
               sizes="(max-width: 900px) 100vw, 42vw"
             />
-            <Image
-              className="about-hero__image about-hero__image--crazy"
-              src="/img/about/ritratto-crazy-transparent.webp"
-              alt=""
-              fill
-              sizes="(max-width: 900px) 100vw, 42vw"
+            <video
+              className="about-hero__video--crazy"
+              src="/img/about/video-about.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
             />
           </figure>
           <h1>{page.title}</h1>

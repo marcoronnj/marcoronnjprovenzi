@@ -2484,15 +2484,22 @@ body.is-crazy-mode .about-hero__portrait::before {
   width: calc(100% - 24px) !important;
 }
 
-.about-hero__image--crazy {
+.about-hero__video--crazy {
+  height: calc(100% - 24px);
+  left: 24px;
+  object-fit: contain;
+  object-position: center bottom;
   opacity: 0;
+  position: absolute;
+  top: 0;
+  width: calc(100% - 24px);
 }
 
 body.is-crazy-mode .about-hero__image--default {
   opacity: 0;
 }
 
-body.is-crazy-mode .about-hero__image--crazy {
+body.is-crazy-mode .about-hero__video--crazy {
   mix-blend-mode: multiply;
   opacity: 1;
 }
