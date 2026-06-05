@@ -17,6 +17,14 @@ const featuredProjectSlugs = [
   "vedrai"
 ];
 
+export function generateMetadata({ params }: { params: { lang: Lang } }) {
+  return {
+    alternates: {
+      canonical: `/${params.lang}`
+    }
+  };
+}
+
 export default function Home({ params }: { params: { lang: Lang } }) {
   if (!isLang(params.lang)) notFound();
   const copy = dictionary[params.lang];

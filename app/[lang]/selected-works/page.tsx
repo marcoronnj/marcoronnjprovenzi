@@ -8,6 +8,14 @@ export function generateStaticParams() {
   return [{ lang: "it" }, { lang: "en" }];
 }
 
+export function generateMetadata({ params }: { params: { lang: Lang } }) {
+  return {
+    alternates: {
+      canonical: `/${params.lang}/selected-works`
+    }
+  };
+}
+
 export default function SelectedWorksPage({ params }: { params: { lang: Lang } }) {
   if (!isLang(params.lang)) notFound();
   const copy = dictionary[params.lang];

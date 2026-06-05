@@ -23,7 +23,10 @@ export function generateMetadata({
 
   return {
     title: `${project.title[params.lang]} - Marco Ronnj Provenzi`,
-    description: project.excerpt[params.lang]
+    description: project.excerpt[params.lang],
+    alternates: {
+      canonical: `/${params.lang}/projects/${params.slug}`
+    }
   };
 }
 

@@ -109,7 +109,10 @@ export function generateMetadata({ params }: { params: { lang: Lang } }) {
 
   return {
     title: `${params.lang === "it" ? "Servizi" : "Services"} - Marco Ronnj Provenzi`,
-    description: copy.subtitle
+    description: copy.subtitle,
+    alternates: {
+      canonical: `/${params.lang}/services`
+    }
   };
 }
 

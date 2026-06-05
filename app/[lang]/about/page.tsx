@@ -73,7 +73,10 @@ export function generateMetadata({ params }: { params: { lang: Lang } }) {
 
   return {
     title: `About - Marco Ronnj Provenzi`,
-    description: copy.lead
+    description: copy.lead,
+    alternates: {
+      canonical: `/${params.lang}/about`
+    }
   };
 }
 

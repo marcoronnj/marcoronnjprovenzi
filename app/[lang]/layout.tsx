@@ -22,7 +22,6 @@ export function generateMetadata({
     title: copy.metaTitle as string,
     description: copy.metaDescription as string,
     alternates: {
-      canonical: `/${params.lang}`,
       languages: {
         it: "/it",
         en: "/en"
