@@ -28,7 +28,11 @@ export function generateMetadata({
     title,
     description,
     alternates: {
-      canonical: `/${params.lang}/projects/${params.slug}`
+      canonical: `/${params.lang}/projects/${params.slug}`,
+      languages: {
+        it: `/it/projects/${params.slug}`,
+        en: `/en/projects/${params.slug}`
+      }
     },
     openGraph: {
       title,

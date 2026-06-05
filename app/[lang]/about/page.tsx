@@ -78,7 +78,8 @@ export function generateMetadata({ params }: { params: { lang: Lang } }) {
     title,
     description,
     alternates: {
-      canonical: `/${params.lang}/about`
+      canonical: `/${params.lang}/about`,
+      languages: { it: "/it/about", en: "/en/about" }
     },
     openGraph: {
       title,
