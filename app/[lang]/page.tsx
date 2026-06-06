@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { HeroStage } from "@/components/HeroStage";
 import { Menu } from "@/components/Menu";
+import { PageLoader } from "@/components/PageLoader";
 import { ProjectIndex } from "@/components/ProjectIndex";
 import { projects } from "@/data/projects";
 import { dictionary, isLang, type Lang } from "@/lib/i18n";
@@ -57,6 +58,7 @@ export default function Home({ params }: { params: { lang: Lang } }) {
 
   return (
     <>
+      <PageLoader />
       <Menu
         lang={params.lang}
         nav={copy.nav as string[]}
