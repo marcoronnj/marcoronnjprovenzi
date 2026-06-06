@@ -76,6 +76,7 @@ export default function RootLayout({
   return (
     <html lang="it" suppressHydrationWarning>
       <head>
+        <style dangerouslySetInnerHTML={{ __html: `body{background:#ffffff;margin:0}.menu-panel{position:fixed;inset:0;transform:translateY(-100%);z-index:50}` }} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
