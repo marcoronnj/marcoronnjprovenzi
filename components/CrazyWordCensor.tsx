@@ -19,7 +19,7 @@ const SKIP_SELECTOR = [
   "canvas",
   ".site-header",
   ".menu-panel",
-  ".intro-loader",
+  ".initial-page-loader",
   ".hero-title",
   ".hero-reveal",
   ".hero-field",

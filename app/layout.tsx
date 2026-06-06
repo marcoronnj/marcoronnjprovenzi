@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import IntroLoader from "../components/IntroLoader";
+import {
+  InitialPageLoader,
+  initialPageLoaderCss,
+  initialPageLoaderScript
+} from "../components/InitialPageLoader";
 import { IubendaLoader } from "../components/IubendaLoader";
 
 export function generateMetadata(): Metadata {
@@ -73,14 +77,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="it" suppressHydrationWarning>
+    <html lang="it" className="is-initial-page-loading" suppressHydrationWarning>
       <head>
+        <style
+          id="initial-page-loader-css"
+          dangerouslySetInnerHTML={{ __html: initialPageLoaderCss }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body suppressHydrationWarning>
+      <body className="is-initial-page-loading" suppressHydrationWarning>
+        <InitialPageLoader />
         <script
           dangerouslySetInnerHTML={{
             __html: iubendaConsentSetup
@@ -92,7 +101,7 @@ export default function RootLayout({
               'try{var mode=window.localStorage.getItem("crazy-mode");if(mode==="on"){document.documentElement.classList.add("is-crazy-mode");document.body.classList.add("is-crazy-mode");}else{document.documentElement.classList.remove("is-crazy-mode");document.body.classList.remove("is-crazy-mode");if(mode!=="off"){window.localStorage.setItem("crazy-mode","off");}}}catch(error){}'
           }}
         />
-        <IntroLoader />
+        <script dangerouslySetInnerHTML={{ __html: initialPageLoaderScript }} />
         {children}
         <IubendaLoader />
       </body>
