@@ -2,7 +2,6 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { HeroStage } from "@/components/HeroStage";
-import { InitialPageLoader, initialPageLoaderScript } from "@/components/InitialPageLoader";
 import { Menu } from "@/components/Menu";
 import { ProjectIndex } from "@/components/ProjectIndex";
 import { projects } from "@/data/projects";
@@ -58,8 +57,6 @@ export default function Home({ params }: { params: { lang: Lang } }) {
 
   return (
     <>
-      <InitialPageLoader />
-      <script dangerouslySetInnerHTML={{ __html: initialPageLoaderScript }} />
       <Menu
         lang={params.lang}
         nav={copy.nav as string[]}

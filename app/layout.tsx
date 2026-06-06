@@ -1,9 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import {
-  initialPageLoaderCss,
-  initialPageLoaderGateScript
-} from "../components/InitialPageLoader";
 import { IubendaLoader } from "../components/IubendaLoader";
 
 export function generateMetadata(): Metadata {
@@ -80,11 +76,6 @@ export default function RootLayout({
   return (
     <html lang="it" suppressHydrationWarning>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: initialPageLoaderGateScript }} />
-        <style
-          id="initial-page-loader-css"
-          dangerouslySetInnerHTML={{ __html: initialPageLoaderCss }}
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
