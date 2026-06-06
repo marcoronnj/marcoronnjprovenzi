@@ -5,7 +5,7 @@ import { IubendaLoader } from "../components/IubendaLoader";
 export function generateMetadata(): Metadata {
   return {
     applicationName: "Marco Ronnj Provenzi",
-    metadataBase: new URL("https://marcoronnjprovenzi.com"),
+    metadataBase: new URL("https://www.marcoronnjprovenzi.com"),
     title: "Marco Ronnj Provenzi - Web Designer Freelance",
     description:
       "Web designer freelance e web developer per siti custom, esperienze interattive e brand digitali.",
