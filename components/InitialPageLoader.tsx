@@ -1,27 +1,29 @@
 export const initialPageLoaderCss = `
-html.is-initial-page-loading,
-html.is-initial-page-loading body {
-  overflow: hidden;
-}
-
 .initial-page-loader {
   align-items: center;
   background: #000;
-  display: flex;
+  display: none;
   inset: 0;
   justify-content: center;
-  opacity: 1;
-  pointer-events: auto;
+  opacity: 0;
+  pointer-events: none;
   position: fixed;
   transition:
     opacity 500ms cubic-bezier(0.22, 1, 0.36, 1),
     visibility 500ms cubic-bezier(0.22, 1, 0.36, 1);
-  visibility: visible;
+  visibility: hidden;
   z-index: 2147483647;
 }
 
+.is-external-home-entry .initial-page-loader {
+  animation: initial-page-loader-auto-hide 500ms cubic-bezier(0.22, 1, 0.36, 1) 500ms forwards;
+  display: flex;
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
 .initial-page-loader__mark {
-  animation: initial-page-loader-spin 1.2s linear infinite;
   background: #fff;
   border-radius: 1px;
   height: 60px;
@@ -31,6 +33,12 @@ html.is-initial-page-loading body {
   width: 60px;
 }
 
+.is-external-home-entry .initial-page-loader__mark {
+  animation:
+    initial-page-loader-spin 1.2s linear infinite,
+    initial-page-loader-mark-auto-hide 500ms cubic-bezier(0.22, 1, 0.36, 1) 500ms forwards;
+}
+
 .initial-page-loader.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -38,7 +46,7 @@ html.is-initial-page-loading body {
 }
 
 .initial-page-loader.is-hidden .initial-page-loader__mark {
-  animation-play-state: paused;
+  animation: none;
   transform: translateZ(0) rotate(180deg) scale(0.92);
 }
 
@@ -52,11 +60,53 @@ html.is-initial-page-loading body {
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .initial-page-loader__mark {
-    animation: none;
+@keyframes initial-page-loader-auto-hide {
+  to {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
   }
 }
+
+@keyframes initial-page-loader-mark-auto-hide {
+  to {
+    transform: translateZ(0) rotate(180deg) scale(0.92);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .is-external-home-entry .initial-page-loader__mark {
+    animation: initial-page-loader-mark-auto-hide 1ms linear 999ms forwards;
+  }
+}
+`;
+
+export const initialPageLoaderGateScript = `
+(function () {
+  try {
+    var path = window.location.pathname.replace(/\\/+$/, "");
+    var isHome = path === "/it" || path === "/en";
+    var referrer = document.referrer;
+    var isExternalEntry = false;
+
+    if (!isHome || !referrer || window.sessionStorage.getItem("initial-home-loader-seen") === "true") {
+      return;
+    }
+
+    try {
+      isExternalEntry = new URL(referrer).origin !== window.location.origin;
+    } catch (error) {
+      isExternalEntry = true;
+    }
+
+    if (!isExternalEntry) {
+      return;
+    }
+
+    window.sessionStorage.setItem("initial-home-loader-seen", "true");
+    document.documentElement.classList.add("is-external-home-entry");
+  } catch (error) {}
+})();
 `;
 
 export const initialPageLoaderScript = `
@@ -68,6 +118,7 @@ export const initialPageLoaderScript = `
   var loaderHidden = false;
 
   function unlockScroll() {
+    doc.documentElement.classList.remove("is-external-home-entry");
     doc.documentElement.classList.remove("is-initial-page-loading");
     if (doc.body) {
       doc.body.classList.remove("is-initial-page-loading");
@@ -100,7 +151,7 @@ export const initialPageLoaderScript = `
     hideInitialLoader();
   }, { once: true });
 
-  maxTimer = win.setTimeout(hideInitialLoader, 1000);
+  maxTimer = win.setTimeout(hideInitialLoader, 500);
 
   if (doc.readyState === "complete") {
     hideInitialLoader();
