@@ -37,7 +37,7 @@ export function generateMetadata({
     openGraph: {
       title,
       description,
-      url: `https://marcoronnjprovenzi.com/${params.lang}/projects/${params.slug}`,
+      url: `/${params.lang}/projects/${params.slug}`,
       locale: params.lang === "it" ? "it_IT" : "en_US",
       type: "website"
     }
