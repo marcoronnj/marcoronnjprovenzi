@@ -2153,9 +2153,6 @@ export const clients: ClientListItem[] = [
     slug: "giorgia-mantero-osteopata"
   },
   {
-    name: "Giulie Abiti Da Sposa"
-  },
-  {
     name: "Giussani Falegnameria"
   },
   {

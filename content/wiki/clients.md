@@ -61,7 +61,6 @@ I clienti con pagina progetto interna devono essere linkati, in bold e con under
 - Furnel e Pirol
 - Gelateria Stracciatella
 - Giorgia Mantero Osteopata
-- Giulie Abiti Da Sposa
 - Giussani Falegnameria
 - Hangar 51
 - Helvetic Leaf
