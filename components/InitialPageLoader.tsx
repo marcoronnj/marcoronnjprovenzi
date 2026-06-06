@@ -87,23 +87,24 @@ export const initialPageLoaderGateScript = `
     var path = window.location.pathname.replace(/\\/+$/, "");
     var isHome = path === "/it" || path === "/en";
     var referrer = document.referrer;
-    var isExternalEntry = false;
+    var shouldShowLoader = !referrer;
 
-    if (!isHome || !referrer || window.sessionStorage.getItem("initial-home-loader-seen") === "true") {
+    if (!isHome) {
       return;
     }
 
-    try {
-      isExternalEntry = new URL(referrer).origin !== window.location.origin;
-    } catch (error) {
-      isExternalEntry = true;
+    if (referrer) {
+      try {
+        shouldShowLoader = new URL(referrer).origin !== window.location.origin;
+      } catch (error) {
+        shouldShowLoader = true;
+      }
     }
 
-    if (!isExternalEntry) {
+    if (!shouldShowLoader) {
       return;
     }
 
-    window.sessionStorage.setItem("initial-home-loader-seen", "true");
     document.documentElement.classList.add("is-external-home-entry");
   } catch (error) {}
 })();
