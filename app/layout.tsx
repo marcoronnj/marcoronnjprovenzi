@@ -7,7 +7,6 @@ import {
 import { IubendaLoader } from "../components/IubendaLoader";
 
 export function generateMetadata(): Metadata {
-  const isPreview = process.env.VERCEL_ENV !== "production";
   return {
     applicationName: "Marco Ronnj Provenzi",
     metadataBase: new URL("https://marcoronnjprovenzi.com"),
@@ -32,7 +31,10 @@ export function generateMetadata(): Metadata {
       statusBarStyle: "default",
       title: "Marco Ronnj Provenzi"
     },
-    ...(isPreview && { robots: { index: false, follow: false } })
+    robots:
+      (process.env.VERCEL_ENV === "production"
+        ? { index: true, follow: true }
+        : { index: false, noindex: true, follow: false }) as unknown as Metadata["robots"]
   };
 }
 
